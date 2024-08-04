@@ -1,39 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://SAFS-Varanasi-Internship/2024-tutorials/team.html</loc>
-    <lastmod>2024-07-02T23:11:58.480Z</lastmod>
+    <loc>https://ocean-satellite-tools.github.io/fish-pace/overview.html</loc>
+    <lastmod>2024-08-04T18:02:52.368Z</lastmod>
   </url>
   <url>
-    <loc>https://SAFS-Varanasi-Internship/2024-tutorials/overview.html</loc>
-    <lastmod>2024-07-02T23:11:58.480Z</lastmod>
+    <loc>https://ocean-satellite-tools.github.io/fish-pace/content/2_rrs.html</loc>
+    <lastmod>2024-08-04T19:50:13.268Z</lastmod>
   </url>
   <url>
-    <loc>https://SAFS-Varanasi-Internship/2024-tutorials/notebooks-data/02_IO_Zarr.html</loc>
-    <lastmod>2024-07-18T22:30:09.025Z</lastmod>
+    <loc>https://ocean-satellite-tools.github.io/fish-pace/content/2_par.html</loc>
+    <lastmod>2024-08-04T19:46:54.598Z</lastmod>
   </url>
   <url>
-    <loc>https://SAFS-Varanasi-Internship/2024-tutorials/nasa-tutorials/00_Setup.html</loc>
-    <lastmod>2024-07-02T23:11:58.172Z</lastmod>
+    <loc>https://ocean-satellite-tools.github.io/fish-pace/content/2_chla.html</loc>
+    <lastmod>2024-08-04T19:14:43.269Z</lastmod>
   </url>
   <url>
-    <loc>https://SAFS-Varanasi-Internship/2024-tutorials/coc.html</loc>
-    <lastmod>2024-07-02T23:11:57.768Z</lastmod>
+    <loc>https://ocean-satellite-tools.github.io/fish-pace/content/2_avw.html</loc>
+    <lastmod>2024-08-04T19:52:54.743Z</lastmod>
   </url>
   <url>
-    <loc>https://SAFS-Varanasi-Internship/2024-tutorials/index.html</loc>
-    <lastmod>2024-07-18T21:47:31.961Z</lastmod>
+    <loc>https://ocean-satellite-tools.github.io/fish-pace/content/2_adg.html</loc>
+    <lastmod>2024-08-04T19:24:43.862Z</lastmod>
   </url>
   <url>
-    <loc>https://SAFS-Varanasi-Internship/2024-tutorials/nasa-tutorials/index.html</loc>
-    <lastmod>2024-07-02T23:11:58.392Z</lastmod>
+    <loc>https://ocean-satellite-tools.github.io/fish-pace/content/1_introduction.html</loc>
+    <lastmod>2024-08-04T19:00:17.151Z</lastmod>
   </url>
   <url>
-    <loc>https://SAFS-Varanasi-Internship/2024-tutorials/notebooks-ml/ConvLSTM_Tutorial.html</loc>
-    <lastmod>2024-07-17T23:24:17.745Z</lastmod>
+    <loc>https://ocean-satellite-tools.github.io/fish-pace/coc.html</loc>
+    <lastmod>2024-08-04T18:02:51.955Z</lastmod>
   </url>
   <url>
-    <loc>https://SAFS-Varanasi-Internship/2024-tutorials/support.html</loc>
-    <lastmod>2024-07-02T23:11:58.480Z</lastmod>
+    <loc>https://ocean-satellite-tools.github.io/fish-pace/content/1_accessing.html</loc>
+    <lastmod>2024-08-04T19:07:52.659Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ocean-satellite-tools.github.io/fish-pace/content/1_which_satellites.html</loc>
+    <lastmod>2024-08-04T18:37:23.282Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ocean-satellite-tools.github.io/fish-pace/content/2_aph.html</loc>
+    <lastmod>2024-08-04T19:21:25.695Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ocean-satellite-tools.github.io/fish-pace/content/2_bbp.html</loc>
+    <lastmod>2024-08-04T19:37:56.980Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ocean-satellite-tools.github.io/fish-pace/content/2_kd.html</loc>
+    <lastmod>2024-08-04T19:19:17.828Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ocean-satellite-tools.github.io/fish-pace/content/2_phytoplankton_carbon.html</loc>
+    <lastmod>2024-08-04T19:17:18.826Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ocean-satellite-tools.github.io/fish-pace/index.html</loc>
+    <lastmod>2024-08-04T18:37:02.849Z</lastmod>
   </url>
 </urlset>

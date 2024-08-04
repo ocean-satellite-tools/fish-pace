@@ -1,1 +1,1 @@
-Sitemap: https://SAFS-Varanasi-Internship/2024-tutorials/sitemap.xml
+Sitemap: https://ocean-satellite-tools.github.io/fish-pace/sitemap.xml

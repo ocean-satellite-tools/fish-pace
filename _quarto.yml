@@ -3,32 +3,31 @@ project:
   output-dir: docs
   render:
     - "*.*"
-    - "!nasa-tutorials/*.ipynb"
-    - "!notebooks-data/ignore/*.ipynb"
+    - "!notebooks/*.ipynb"
 
 execute:
   freeze: auto
   
 website:
   page-navigation: true  
-  title: "Varanasi Internship 2024"
+  title: "Hyperspectral products for fisheries"
   favicon: images/incois-icon.png
-  site-url: https://SAFS-Varanasi-Internship/2024-tutorials
-  repo-url: https://github.com/SAFS-Varanasi-Internship/2024-tutorials
+  site-url: https://ocean-satellite-tools.github.io/fish-pace
+  repo-url: https://github.com/fish-pace
   repo-actions: [edit, issue, source]
   
-  page-footer: <img src="/images/banner.png" alt="Indian Ocean" style="width:300px"><br />Varanasi Internship (2024)
+  page-footer: <img src="" alt="PACE" style="width:300px"><br />PACE Hackweek (2024)
  
   sidebar:
-    title: "ML for Fisheries: Varanasi Internship 2024"
+    title: "PACE products for fisheries and aquaculture"
     pinned: true
     align: center
     tools: 
       - icon: globe
-        href: https://github.com/safs-varanasi-internship
+        href: https://github.com/ocean-satellite-tools
         text: "GH org"
       - icon: github
-        href: https://github.com/safs-varanasi-internship/2024-tutorials
+        href: https://github.com/ocean-satellite-tools/fish-pace
         text: "repo"
 
     style: "docked"
@@ -38,20 +37,32 @@ website:
     contents:
       - text: "Home"
         href: index.html
-      - section: "Tutorials"
+      - section: "Getting started"
         contents:
-          - text: "IO Zarr file"
-            href: notebooks-data/02_IO_Zarr.ipynb
-          - text: "ConvLSTM for SST prediction"
-            href: notebooks-ml/ConvLSTM_Tutorial.ipynb
-      - section: "Projects"
-      - text: <img width=100px>
-      - icon: server
-        href: https://fish.opensci.live/
-        text: "JupyterHub"
-      - icon: wechat
-        href: https://github.com/SAFS-Varanasi-Internship/Summer-2024/discussions
-        text: "Discussions"
+          - text: "Introduction"
+            href: content/1_introduction.md
+          - text: "Which satellites?"
+            href: content/1_which_satellites.md
+      - section: "Hyperspectral products"
+        contents:
+          - text: "Chlorophyll-a"
+            href: content/2_chla.md
+          - text: "Phytoplankton carbon"
+            href: content/2_phytoplankton_carbon.md
+          - text: "Diffuse attenuation coefficients"
+            href: content/2_kd.md
+          - text: "Phyto absorption coefficients"
+            href: content/2_aph.md
+          - text: "Non-phyto absorption coefficients"
+            href: content/2_adg.md
+          - text: "Spectral particle backscattering coefficients"
+            href: content/2_bbp.md
+          - text: "Photosynthetically available radiation"
+            href: content/2_par.md
+          - text: "Remote sensing reflectance"
+            href: content/2_rrs.md
+          - text: "Apparent Visible Wavelength"
+            href: content/2_avw.md
 
 format:
   html:

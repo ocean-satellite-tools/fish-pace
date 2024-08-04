@@ -2,13 +2,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.555">
+<meta name="generator" content="quarto-1.5.55">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Interns (Yifei Hang and Shridhar Sinha, UW students), Mentor (Eli Holmes, NOAA)">
+<meta name="author" content="text - Ryan Vandermulen (NOAA Fisheries, OST); tutorials - hackweek participants">
 
-<title>Varanasi Internship 2024 - Machine Learning for Fisheries: Varanasi Internship 2024</title>
+<title>Applications of hyperspectral ocean color data for aquaculture and fisheries management – Hyperspectral products for fisheries</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,7 +30,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./notebooks-data/02_IO_Zarr.html" rel="next">
+<link href="./content/1_introduction.html" rel="next">
 <link href="./images/incois-icon.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -81,13 +81,13 @@ ul.task-list li input[type="checkbox"] {
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
         <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">Home</a></li></ol></nav>
-        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
-      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
       </button>
     </div>
@@ -99,10 +99,10 @@ ul.task-list li input[type="checkbox"] {
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
     <div class="pt-lg-2 mt-2 text-center sidebar-header">
     <div class="sidebar-title mb-0 py-0">
-      <a href="./">ML for Fisheries: Varanasi Internship 2024</a> 
+      <a href="./">PACE products for fisheries and aquaculture</a> 
         <div class="sidebar-tools-main tools-wide">
-    <a href="https://github.com/safs-varanasi-internship" title="GH org" class="quarto-navigation-tool px-1" aria-label="GH org"><i class="bi bi-globe"></i></a>
-    <a href="https://github.com/safs-varanasi-internship/2024-tutorials" title="repo" class="quarto-navigation-tool px-1" aria-label="repo"><i class="bi bi-github"></i></a>
+    <a href="https://github.com/ocean-satellite-tools" title="GH org" class="quarto-navigation-tool px-1" aria-label="GH org"><i class="bi bi-globe"></i></a>
+    <a href="https://github.com/ocean-satellite-tools/fish-pace" title="repo" class="quarto-navigation-tool px-1" aria-label="repo"><i class="bi bi-github"></i></a>
   <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
     </div>
@@ -122,64 +122,99 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="false">
- <span class="menu-text">Tutorials</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="false" aria-label="Toggle section">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false">
+ <span class="menu-text">Getting started</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./notebooks-data/02_IO_Zarr.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">IO Zarr file</span></a>
+  <a href="./content/1_introduction.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Introduction</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./notebooks-ml/ConvLSTM_Tutorial.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">ConvLSTM for SST prediction</span></a>
+  <a href="./content/1_which_satellites.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Which satellites?</span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
-      <span class="sidebar-item-text sidebar-link text-start">
- <span class="menu-text">Projects</span></span>
-  </li>
-        <li class="sidebar-item">
- <span class="menu-text"><img width="100px"></span>
-  </li>
-        <li class="sidebar-item">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false">
+ <span class="menu-text">Hyperspectral products</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="https://fish.opensci.live/" class="sidebar-item-text sidebar-link"><i class="bi bi-server" role="img">
-</i> 
- <span class="menu-text">JupyterHub</span></a>
+  <a href="./content/2_chla.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Chlorophyll-a</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="https://github.com/SAFS-Varanasi-Internship/Summer-2024/discussions" class="sidebar-item-text sidebar-link"><i class="bi bi-wechat" role="img">
-</i> 
- <span class="menu-text">Discussions</span></a>
+  <a href="./content/2_phytoplankton_carbon.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Phytoplankton carbon</span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./content/2_kd.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Diffuse attenuation coefficients</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./content/2_aph.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Phyto absorption coefficients</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./content/2_adg.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Non-phyto absorption coefficients</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./content/2_bbp.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Spectral particle backscattering coefficients</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./content/2_par.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Photosynthetically available radiation</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./content/2_rrs.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Remote sensing reflectance</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./content/2_avw.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Apparent Visible Wavelength</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
     </ul>
     </div>
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul class="collapse">
-  <li><a href="#how-can-machine-learning-help" id="toc-how-can-machine-learning-help" class="nav-link active" data-scroll-target="#how-can-machine-learning-help">How can machine-learning help?</a></li>
-  <li><a href="#goals-of-the-project" id="toc-goals-of-the-project" class="nav-link" data-scroll-target="#goals-of-the-project">Goals of the project</a></li>
-  <li><a href="#data-set" id="toc-data-set" class="nav-link" data-scroll-target="#data-set">Data set</a></li>
-  <li><a href="#links" id="toc-links" class="nav-link" data-scroll-target="#links">Links</a></li>
-  </ul>
-<div class="toc-actions"><ul class="collapse"><li><a href="https://github.com/SAFS-Varanasi-Internship/2024-tutorials/edit/main/index.md" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/SAFS-Varanasi-Internship/2024-tutorials/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/SAFS-Varanasi-Internship/2024-tutorials/blob/main/index.md" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></nav>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -195,7 +230,7 @@ function googleTranslateElementInit() {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Machine Learning for Fisheries: Varanasi Internship 2024</h1>
+<h1 class="title">Applications of hyperspectral ocean color data for aquaculture and fisheries management</h1>
 </div>
 
 
@@ -205,7 +240,7 @@ function googleTranslateElementInit() {
     <div>
     <div class="quarto-title-meta-heading">Author</div>
     <div class="quarto-title-meta-contents">
-             <p>Interns (Yifei Hang and Shridhar Sinha, UW students), Mentor (Eli Holmes, NOAA) </p>
+             <p>text - Ryan Vandermulen (NOAA Fisheries, OST); tutorials - hackweek participants </p>
           </div>
   </div>
     
@@ -218,32 +253,8 @@ function googleTranslateElementInit() {
 </header>
 
 
-<p><img src="images/banner.png" class="img-fluid"></p>
-<p>This summer’s project relates to gap-filling (NAs) in remote-sensing data for chlorophyll. Why do gaps appear? Because the ocean color sensor cannot see through clouds. Why is this important? Chlorophyll-a is a key index of ocean productivity. Ocean color (after being processed through algorithms) produces an chlorophyll estimate but due to clouds there are still many gaps in the estimates. This animation shows the Arabian Sea in May 2022. White are clouds.</p>
-<p><img src="images/chl.gif" class="img-fluid"></p>
-<section id="how-can-machine-learning-help" class="level2">
-<h2 class="anchored" data-anchor-id="how-can-machine-learning-help">How can machine-learning help?</h2>
-</section>
-<section id="goals-of-the-project" class="level2">
-<h2 class="anchored" data-anchor-id="goals-of-the-project">Goals of the project</h2>
-<p>The main goal is to show ‘proof of concept’ of deep-learning as a gap-filling approach and to compare different deep-learning algorithms for this task. The interns will compare the performance of different deep-learning algorithms and learn what kind of set-up and tuning is required for this task.</p>
-<p>Additionally the goal is to develop tutorials to help others apply deep-learning to similar types of tasks or for this gap-filling task in different regions.</p>
-</section>
-<section id="data-set" class="level2">
-<h2 class="anchored" data-anchor-id="data-set">Data set</h2>
-<p>We are using a analysis ready (zarr) file with a collection of ocean physical variables for the Indian Ocean. Why the Indian Ocean? It has a lot of clouds and there is a complex relationship between the physical variables and chlorophyll due to strong seasonal upwelling systems off the east coast of Africa (Somali upwelling system) and the southwest coast of India. Due to the different orientations of these coastlines, the relationship between wind and chlorophyll will be opposite and orthogonal. Coastal upwelling is driven by wind moving parallel to the coasts and these coasts face different directions (east versus west) and have different angles.</p>
-<p>The data set was mainly developed during the 2023 summer interns. You can read about the data here <a href="https://safs-varanasi-internship.github.io/indian-ocean-zarr/">Handbook on the Indian Ocean Zarr File</a>.</p>
-</section>
-<section id="links" class="level2">
-<h2 class="anchored" data-anchor-id="links">Links</h2>
-<ul>
-<li>GitHub org: <a href="https://github.com/SAFS-Varanasi-Internship" class="uri">https://github.com/SAFS-Varanasi-Internship</a></li>
-<li>JupyterHub: <a href="https://fish.opensci.live/" class="uri">https://fish.opensci.live/</a></li>
-<li>Discussions: <a href="https://github.com/SAFS-Varanasi-Internship/Summer-2024/discussions" class="uri">https://github.com/SAFS-Varanasi-Internship/Summer-2024/discussions</a></li>
-</ul>
 
 
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -425,18 +436,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
     return false;
   }
-  const clipboard = new window.ClipboardJS('.code-copy-button', {
-    text: function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-    }
-  });
-  clipboard.on('success', function(e) {
+  const onCopySuccess = function(e) {
     // button target
     const button = e.trigger;
     // don't keep focus
@@ -468,15 +468,37 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }, 1000);
     // clear code selection
     e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
   });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp("https:\/\/SAFS-Varanasi-Internship\/2024-tutorials");
+      var filterRegex = new RegExp("https:\/\/ocean-satellite-tools\.github\.io\/fish-pace");
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
     // Inspect non-navigation links and adorn them if external
- 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
     for (var i=0; i<links.length; i++) {
       const link = links[i];
       if (!isInternal(link.href)) {
@@ -803,8 +825,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   <div class="nav-page nav-page-previous">
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./notebooks-data/02_IO_Zarr.html" class="pagination-link" aria-label="IO Zarr file">
-        <span class="nav-page-text">IO Zarr file</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./content/1_introduction.html" class="pagination-link" aria-label="Introduction">
+        <span class="nav-page-text">Introduction</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -815,8 +837,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       &nbsp;
     </div>   
     <div class="nav-footer-center">
-<p><img src="./images/banner.png" alt="Indian Ocean" style="width:300px"><br>Varanasi Internship (2024)</p>
-<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/SAFS-Varanasi-Internship/2024-tutorials/edit/main/index.md" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/SAFS-Varanasi-Internship/2024-tutorials/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/SAFS-Varanasi-Internship/2024-tutorials/blob/main/index.md" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></div>
+<p><img src="" alt="PACE" style="width:300px"><br>PACE Hackweek (2024)</p>
+<div class="toc-actions"><ul><li><a href="https://github.com/fish-pace/edit/main/index.md" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/fish-pace/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/fish-pace/blob/main/index.md" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></div>
     <div class="nav-footer-right">
       &nbsp;
     </div>
