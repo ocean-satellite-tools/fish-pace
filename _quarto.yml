@@ -11,12 +11,12 @@ execute:
 website:
   page-navigation: true  
   title: "Hyperspectral products for fisheries"
-  favicon: images/incois-icon.png
+  favicon: images/pace.gif
   site-url: https://ocean-satellite-tools.github.io/fish-pace
   repo-url: https://github.com/fish-pace
   repo-actions: [edit, issue, source]
   
-  page-footer: <img src="" alt="PACE" style="width:300px"><br />PACE Hackweek (2024)
+  page-footer: <img src="" alt="OHW24" style="width:300px"><br />Ocean HackWeek (2024)
  
   sidebar:
     title: "PACE products for fisheries and aquaculture"
