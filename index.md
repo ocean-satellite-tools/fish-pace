@@ -1,10 +1,10 @@
 ---
 title: "Applications of hyperspectral ocean color data
 for aquaculture and fisheries management"
-author: text - Ryan Vandermulen (NOAA Fisheries, OST); tutorials - others
+author: Ryan Vandermulen (NOAA Fisheries, OST), Eli Holmes (NOAA Fisheries), Others
 ---
 
-In simple words PACE Ocean products will tell you a story about:
+PACE Ocean products tell you about:
 
 * WHAT IS THE COLOR OF THE OCEAN (Rrs)
 * WHAT/WHO IS THERE (phytoplankton composition, SPM)

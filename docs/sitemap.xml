@@ -1,63 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://ocean-satellite-tools.github.io/fish-pace/overview.html</loc>
-    <lastmod>2024-08-04T18:02:52.368Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ocean-satellite-tools.github.io/fish-pace/content/2_rrs.html</loc>
-    <lastmod>2024-08-04T19:50:13.268Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ocean-satellite-tools.github.io/fish-pace/content/2_par.html</loc>
-    <lastmod>2024-08-04T19:46:54.598Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ocean-satellite-tools.github.io/fish-pace/content/2_chla.html</loc>
-    <lastmod>2024-08-04T19:14:43.269Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ocean-satellite-tools.github.io/fish-pace/content/2_avw.html</loc>
-    <lastmod>2024-08-04T19:52:54.743Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ocean-satellite-tools.github.io/fish-pace/content/2_adg.html</loc>
-    <lastmod>2024-08-04T19:24:43.862Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ocean-satellite-tools.github.io/fish-pace/content/1_introduction.html</loc>
-    <lastmod>2024-08-04T19:00:17.151Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ocean-satellite-tools.github.io/fish-pace/coc.html</loc>
-    <lastmod>2024-08-04T18:02:51.955Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ocean-satellite-tools.github.io/fish-pace/content/1_accessing.html</loc>
-    <lastmod>2024-08-04T19:07:52.659Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ocean-satellite-tools.github.io/fish-pace/content/1_which_satellites.html</loc>
-    <lastmod>2024-08-04T18:37:23.282Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ocean-satellite-tools.github.io/fish-pace/content/2_aph.html</loc>
-    <lastmod>2024-08-04T19:21:25.695Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ocean-satellite-tools.github.io/fish-pace/content/2_bbp.html</loc>
-    <lastmod>2024-08-04T19:37:56.980Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ocean-satellite-tools.github.io/fish-pace/content/2_kd.html</loc>
-    <lastmod>2024-08-04T19:19:17.828Z</lastmod>
+    <loc>https://ocean-satellite-tools.github.io/fish-pace/index.html</loc>
+    <lastmod>2024-08-23T22:22:55.435Z</lastmod>
   </url>
   <url>
     <loc>https://ocean-satellite-tools.github.io/fish-pace/content/2_phytoplankton_carbon.html</loc>
     <lastmod>2024-08-04T19:17:18.826Z</lastmod>
   </url>
   <url>
-    <loc>https://ocean-satellite-tools.github.io/fish-pace/index.html</loc>
-    <lastmod>2024-08-05T14:10:26.964Z</lastmod>
+    <loc>https://ocean-satellite-tools.github.io/fish-pace/content/2_kd.html</loc>
+    <lastmod>2024-08-04T19:19:17.828Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ocean-satellite-tools.github.io/fish-pace/content/2_bbp.html</loc>
+    <lastmod>2024-08-04T19:37:56.980Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ocean-satellite-tools.github.io/fish-pace/content/2_aph.html</loc>
+    <lastmod>2024-08-04T19:21:25.695Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ocean-satellite-tools.github.io/fish-pace/content/1_which_satellites.html</loc>
+    <lastmod>2024-08-04T18:37:23.282Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ocean-satellite-tools.github.io/fish-pace/content/1_accessing.html</loc>
+    <lastmod>2024-08-04T19:07:52.659Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ocean-satellite-tools.github.io/fish-pace/coc.html</loc>
+    <lastmod>2024-08-04T18:02:51.955Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ocean-satellite-tools.github.io/fish-pace/content/1_introduction.html</loc>
+    <lastmod>2024-08-04T19:00:17.151Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ocean-satellite-tools.github.io/fish-pace/content/2_adg.html</loc>
+    <lastmod>2024-08-04T19:24:43.862Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ocean-satellite-tools.github.io/fish-pace/content/2_avw.html</loc>
+    <lastmod>2024-08-04T19:52:54.743Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ocean-satellite-tools.github.io/fish-pace/content/2_chla.html</loc>
+    <lastmod>2024-08-04T19:14:43.269Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ocean-satellite-tools.github.io/fish-pace/content/2_par.html</loc>
+    <lastmod>2024-08-04T19:46:54.598Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ocean-satellite-tools.github.io/fish-pace/content/2_rrs.html</loc>
+    <lastmod>2024-08-04T19:50:13.268Z</lastmod>
   </url>
 </urlset>
