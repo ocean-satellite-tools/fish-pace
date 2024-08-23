@@ -1,5 +1,5 @@
 ---
-title: "Applications of hyperspectral ocean color data
+title: "Applications of PACE hyperspectral ocean color data
 for aquaculture and fisheries management"
 author: Ryan Vandermulen (NOAA Fisheries, OST), Eli Holmes (NOAA Fisheries), Others
 ---
