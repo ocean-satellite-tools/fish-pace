@@ -7,16 +7,17 @@ project:
 
 execute:
   freeze: auto
-  
+date: now
+date-format: "YYYY-MM-DDTHH:mm"
 website:
   page-navigation: true  
   title: "Hyperspectral products for fisheries"
   favicon: images/pace.gif
   site-url: https://ocean-satellite-tools.github.io/fish-pace
-  repo-url: https://github.com/fish-pace
+  repo-url: https://github.com/ocean-satellite-tools/fish-pace
   repo-actions: [edit, issue, source]
   
-  page-footer: <img src="" alt="OHW24" style="width:300px"><br />Ocean HackWeek (2024)
+  page-footer: <img src="https://raw.githubusercontent.com/nmfs-opensci/assets/main/logo/nmfs-opensci-logo3.png" alt="NMFS OpenSci" style="width:200px"><br />Fish-PACE HackWeek (2025)
  
   sidebar:
     title: "PACE products for fisheries and aquaculture"
