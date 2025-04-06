@@ -1,5 +1,5 @@
 ---
-title: Spectral particle backscattering coefficients (bbp)
+title: Photosynthetically available radiation (PAR)
 author: Ryan Vandermeulen
 ---
 
