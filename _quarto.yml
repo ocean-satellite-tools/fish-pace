@@ -67,8 +67,6 @@ website:
             href: content/2_rrs.md
           - text: "Apparent Visible Wavelength"
             href: content/2_avw.md
-      - text: "Lectures"
-        href: content/lectures.md
 
 format:
   html:
