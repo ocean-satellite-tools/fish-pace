@@ -1,5 +1,5 @@
 ---
-title: Which satellite(s) do I want to use?
+title: Ocean color satellites
 author: Ryan Vandermeulen
 ---
 

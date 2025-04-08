@@ -13,3 +13,6 @@
 /python-notebooks/demonstrated data/
 .DS_Store
 .DS_Store
+docs/
+*.Rproj
+

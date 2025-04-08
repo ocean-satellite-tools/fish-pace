@@ -1,6 +1,5 @@
 ---
 title: Spectral non-algal particle plus dissolved organic matter absorption coefficients (adg)
-author: Ryan Vandermeulen
 ---
 
 ## What is it?
@@ -29,3 +28,5 @@ It does, in that it offers a full suite of adg coefficients across the visible s
 Applications Team members are working to improve this product using new approaches to
 radiative transfer as well as machine learning techniques. These improved products, including the
 separation of ad (detritus) from ag (CDOM, or ‘gelbstoff’) are TBD.
+
+![](images/adg442.png)

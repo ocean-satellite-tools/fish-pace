@@ -30,3 +30,5 @@ in highly-scattering, or very high CDOM water-types.
 It does, in that it offers a full suite of aph coefficients across the visible spectrum. PACE Science
 and Applications Team members are working to improve this product using new approaches to
 radiative transfer as well as machine learning techniques. 
+
+![](images/aph442.png)

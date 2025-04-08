@@ -31,3 +31,5 @@ For context, relative to MODIS (10 color bands) or VIIRS (5 color bands), PACE o
 color bands (+ additional UV bands) by which to develop algorithms from. PACE Science and
 Applications Team members are working to improve the removal of the atmosphere, and thus
 improve the reflectance product.
+
+![](images/rrs.png)

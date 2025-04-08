@@ -14,3 +14,4 @@ PACE Ocean products tell you about:
 * WHAT ARE THEY DOING (Primary productivity)
 * HOW ARE THEY DOING (Fluorescence Line Height)
 
+![](images/pace-fish-figure-1.png)

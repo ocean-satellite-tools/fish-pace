@@ -31,3 +31,5 @@ uncertainties introduced in the removal of the atmospheric signal.
 This product was developed specifically for hyperspectral applications, but can be “calibrated” for
 multi-spectral sensors to provide time-series continuity. PACE is the first mission to offer AVW as
 a product under “provisional” status.
+
+![](images/avw.png)

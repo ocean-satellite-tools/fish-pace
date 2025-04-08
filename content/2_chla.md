@@ -33,3 +33,4 @@ dynamic tuning factor to make chlorophyll-a applicable across all water types an
 Another chlorophyll-a product may soon be offered operationally from PACE that was built using
 hyperspectral reflectance data and a mixed density network approach.
 
+![](images/chloro-a.png)

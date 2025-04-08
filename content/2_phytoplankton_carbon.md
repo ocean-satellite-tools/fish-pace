@@ -31,3 +31,5 @@ chromophoric dissolved organic matter (CDOM) concentrations.
 
 Indirectly through improvements to the IOP products. PACE is the first mission to offer
 phytoplankton carbon as a product under “provisional” status.
+
+![](images/carbon-phyto.png)

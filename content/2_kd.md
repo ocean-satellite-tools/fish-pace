@@ -31,3 +31,5 @@ the blue/green wavelength (490 nm) is utilized for most applications. With the f
 exact light quality can be determined at any depth, and also pinpoint the exact wavelength of light
 that penetrates the deepest into the water column, improving estimates of water visibility. Note,
 while computable, water visibility is not a standard operational product offering.
+
+![](images/kd490.png)

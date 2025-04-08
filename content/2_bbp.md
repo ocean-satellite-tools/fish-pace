@@ -32,3 +32,5 @@ backscatter from other optical constituents (re-suspended sediment, SPM, etc.).
 It does, in that it offers a full suite of bbp coefficients across the visible spectrum. PACE Science
 and Applications Team members are working to improve this product using new approaches to
 radiative transfer as well as machine learning techniques. These improved products are TBD.
+
+![](images/bbp442.png)

@@ -12,7 +12,7 @@ date-format: "YYYY-MM-DDTHH:mm"
 website:
   page-navigation: true  
   title: "Hyperspectral products for fisheries"
-  favicon: images/pace.gif
+  favicon: images/favicon.png
   site-url: https://ocean-satellite-tools.github.io/fish-pace
   repo-url: https://github.com/ocean-satellite-tools/fish-pace
   repo-actions: [edit, issue, source]
@@ -20,7 +20,7 @@ website:
   page-footer: <img src="https://raw.githubusercontent.com/nmfs-opensci/assets/main/logo/nmfs-opensci-logo3.png" alt="NMFS OpenSci" style="width:200px"><br />Fish-PACE HackWeek (2025)
  
   sidebar:
-    title: "PACE products for fisheries and aquaculture"
+    title: "Hyperspectral products for fisheries and aquaculture"
     pinned: true
     align: center
     tools: 
@@ -38,13 +38,16 @@ website:
     contents:
       - text: "Home"
         href: index.html
-      - section: "Getting started"
+      - section: "Overview"
         contents:
-          - text: "Introduction"
-            href: content/1_introduction.md
+          - text: "Ocean color"
+            href: content/1_introduction.qmd
+          - text: "Hyperspectral"
+            href: content/1_hyperspectral.md
           - text: "Which satellites?"
             href: content/1_which_satellites.md
       - section: "Hyperspectral products"
+        href: content/2__products.md
         contents:
           - text: "Chlorophyll-a"
             href: content/2_chla.md
@@ -64,6 +67,8 @@ website:
             href: content/2_rrs.md
           - text: "Apparent Visible Wavelength"
             href: content/2_avw.md
+      - text: "Lectures"
+        href: content/lectures.md
 
 format:
   html:
