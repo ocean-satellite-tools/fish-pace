@@ -1,6 +1,5 @@
 project: 
   type: website
-  output-dir: docs
   render:
     - "*.*"
     - "!notebooks/*.ipynb"
@@ -41,7 +40,7 @@ website:
       - section: "Overview"
         contents:
           - text: "Ocean color"
-            href: content/1_introduction.qmd
+            href: content/1_introduction.md
           - text: "Hyperspectral"
             href: content/1_hyperspectral.md
           - text: "Which satellites?"
@@ -64,9 +63,9 @@ website:
           - text: "Photosynthetically available radiation"
             href: content/2_par.md
           - text: "Remote sensing reflectance"
-            href: content/2_rrs.md
+            href: content/2_rrs.html
           - text: "Apparent Visible Wavelength"
-            href: content/2_avw.md
+            href: content/2_avw.html
 
 format:
   html:

@@ -33,3 +33,69 @@ multi-spectral sensors to provide time-series continuity. PACE is the first miss
 a product under “provisional” status.
 
 ![](images/avw.png)
+
+## Python
+
+::: {.callout-note collapse=true}
+### Get and process data
+
+```python
+%%time
+# Authenticate to NASA
+import earthaccess
+auth = earthaccess.login(strategy="interactive", persist=True)
+    
+# (xmin=-73.5, ymin=33.5, xmax=-43.5, ymax=43.5)
+bbox = (-75.5, 38.0, -69.0, 42.5)
+import earthaccess
+results = earthaccess.search_data(
+    short_name = "PACE_OCI_L2_AOP",
+    temporal = ("2024-05-13", "2024-05-13"),
+    bounding_box = bbox
+)
+fileset = earthaccess.open(results);
+
+# load data
+import xarray as xr
+ds = xr.open_dataset(fileset[0], group="geophysical_data")
+
+# Add coords
+# Add coords
+nav = xr.open_dataset(fileset[0], group="navigation_data")
+nav = nav.set_coords(("longitude", "latitude"))
+wave = xr.open_dataset(fileset[0], group="sensor_band_parameters")
+wave = wave.set_coords(("wavelength_3d"))
+dataset = xr.merge((ds["avw"], nav.coords, wave.coords))
+
+# Subset
+avw_box = dataset.where(
+    (
+        (dataset["latitude"] > 38.0)
+        & (dataset["latitude"] < 42.5)
+        & (dataset["longitude"] > -75.5)
+        & (dataset["longitude"] < -69.0)
+    ),
+    drop = True
+)
+```
+:::
+
+::: {.callout-note collapse=true}
+### Make one plot
+
+```python
+# make one plot
+import matplotlib.pyplot as plt
+
+plot = avw_box["avw"].plot(x="longitude", y="latitude", cmap="jet", vmin=450, vmax=580)
+
+# Set x and y limits
+plot.axes.set_xlim(-75.5, -69.0)
+plot.axes.set_ylim(38.0, 42.5)
+
+# Customize colorbar label
+plot.colorbar.set_label("AVW (nm)", fontsize=16, fontweight="bold")
+
+plt.show()
+```
+:::
