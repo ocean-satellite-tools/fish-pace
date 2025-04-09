@@ -1,1 +1,0 @@
-Sitemap: https://ocean-satellite-tools.github.io/fish-pace/sitemap.xml
