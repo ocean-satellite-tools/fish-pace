@@ -1,7 +1,7 @@
 ---
 title: "Applications of PACE hyperspectral ocean color data
 for aquaculture and fisheries management"
-author: Ryan Vandermeulen (NOAA Fisheries, OST), Eli Holmes (NOAA Fisheries), Others
+author: Ryan Vandermeulen (NOAA Fisheries, OST), Python/R code by Eli Holmes (NOAA Fisheries)
 ---
 
 PACE Ocean products tell you about:
