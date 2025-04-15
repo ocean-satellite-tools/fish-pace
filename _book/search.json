@@ -1,0 +1,496 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Hyperspectral products for fisheries",
+    "section": "",
+    "text": "This is a condensed version of NOAA Tech. Memo. NMFS-F/SPO-253.\nPACE Ocean products tell you about:\n\nWHAT IS THE COLOR OF THE OCEAN (Rrs)\nWHAT/WHO IS THERE (phytoplankton composition, SPM)\nHOW MUCH OF IT IS THERE (chlorophyll concentration, particulate/phytoplankton carbon etc.)\nARE THEY SHINY/COLORFUL??? (IOPs)\nHOW MUCH LIGHT IS THERE (PAR/Kd)\nWHAT ARE THEY DOING (Primary productivity)\nHOW ARE THEY DOING (Fluorescence Line Height)\n\n\n\nTech Memo {sec-tech-memo}\nVandermeulen, Ryan, Veronica Lance, Clete Otoshi, Ken Riley, Michelle Tomlinson, and Rebecca Trinh. 2025. Plankton, Aerosol, Cloud and ocean Ecosystem (PACE) satellite data for aquaculture and fisheries management. NOAA Tech. Memo. NMFS-F/SPO-253, 36p. PDF\nCopies of this report may be obtained from: https://spo.nmfs.noaa.gov/tech-memos/",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Applications of PACE hyperspectral ocean color data for aquaculture and fisheries management</span>"
+    ]
+  },
+  {
+    "objectID": "content/1_introduction.html",
+    "href": "content/1_introduction.html",
+    "title": "2  Introduction",
+    "section": "",
+    "text": "The sun emits electromagnetic radiation that hits the Earth, and all of life on this planet depends on just a tiny portion of the electromagnetic spectrum - the colors of the rainbow (‘visible’ light). These are the specific wavelengths (400 -700 nm) by which plants on Earth photosynthesize and give us oxygen that we breathe. As this visible light hits the surface of the ocean and goes into the water, only one of two things can happen to that light - the light can either be scattered, or it can be absorbed by various constituents in the seawater. Pure water naturally absorbs more red light, leaving blue light to be scattered back to our eyes, and it is why the deep ocean appears blue. Conversely, other materials in the water – algae, dissolved organic material, dying or dead plant cells, floating seaweed, pollutants, suspended sediments from land, among other things - each uniquely absorb different amounts and types (wavelengths) of light, creating a color palette that we sense from discrete measurements of light from satellite sensors.",
+    "crumbs": [
+      "Overview",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Introduction</span>"
+    ]
+  },
+  {
+    "objectID": "content/1_hyperspectral.html",
+    "href": "content/1_hyperspectral.html",
+    "title": "3  Hyperspectral ocean color",
+    "section": "",
+    "text": "Our heritage ocean color satellites detect anywhere from 5-10 wavelengths, which has limited our ability to distinguish some components from others. The launch of the Plankton, Aerosol, Cloud, and ocean Ecosystem (PACE) mission on February 8, 2024 introduced the satellite community to global hyperspectral measurements, meaning a spectrally continuous sampling of light (right panels Figure 3.1). This has afforded the opportunity to sense the ocean through an entirely new lens by being able to resolve previously undetectable, subtle features unique to e.g. a particular phytoplankton class, or other ocean constituents. NOAA will be expanding these hyperspectral ocean color capabilities well into the 2050s with the launch of GeoXO, which will offer an even newer perspective from a geostationary orbit, where we can revisit the same area several times per day.\nWhat can we do with ocean color information? The widely used Chlorophyll-a estimates derived from remote-sensing data come from ocean color measurements. The estimates come from algorithms based on ratios of the intensity of reflected or absorbed light in different color bands which were derived from many studies of ocean color along with in-situ measurements of Chlorophyll-a. But this is just one or many products that we can derive from ocean color data. The Hyperspectral products section will familiarize you with the capabilities and nuances of available and emergent ocean color data products.\n\n\n\n\n\n\nFigure 3.1: The 5 panels (right) display the spectrum of light corresponding to the ocean color shown. On the y-axis is the light spectrum (frequency) and the x-axis is the light intensity. Each location denoted by the red squares has a unique spectral fingerprint (shape of the intensity at each spectrum) which is imparted by the materials in the water.",
+    "crumbs": [
+      "Overview",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Hyperspectral ocean color</span>"
+    ]
+  },
+  {
+    "objectID": "content/1_which_satellites.html",
+    "href": "content/1_which_satellites.html",
+    "title": "4  Ocean color satellites",
+    "section": "",
+    "text": "The ocean is a relatively dark target as viewed from space, making up only 4-10% of the light signal seen from a satellite’s perspective above the atmospheric layers. As such, ocean color satellite sensors need to be very sensitive in order to collect a usable signal, but not so sensitive that the radiance (light) signal saturates the optics. There are various trade-offs to consider when designing a satellite, and these impact the potential usability of data products. Different satellite missions may exhibit variations in the spatial resolution (size of the ‘pixel’), temporal resolution (how often a satellite passes the same area), and spectral resolution (how many discrete colors are sampled), making some satellites better suited for certain applications over others. A satellite with relatively high spatial resolution (e.g. Landsat - 30 meter pixels) would be useful to resolve very near-shore, estuarine, and freshwater environments, but as these satellites have to zoom in closer, it takes longer periods of time to revisit the same location (up to 16 days), so the applications may be best suited for e.g. habitat characterization. A satellite with a larger spatial footprint (e.g. MODIS, PACE - 1 km pixels) can cover the entire globe daily, and be used for more operational purposes, but will not sufficiently resolve small-scale ocean features or many lakes. Sometimes a pair or constellation of sensors can be combined to help increase revisit time and increase spatial resolution (e.g. Sentinel-3A and Sentinel-3B OLCI sensors – 300 meter pixels, 2-3 day revisit time). In the future, NOAA (GeoXO – launching 2032) and NASA (GLIMR – launching ~2028) plan to launch geostationary satellites, which can ‘stare’ at locations longer, and revisit a location multiple times per day, creating a sequence of images to mitigate cloud cover, as well as examine biological rates, fluxes, particle trajectories, and more. The tradeoff with a geostationary orbit is that it can only view a particular portion of the globe over a mission lifetime. The table below provides a quick user guide to a several relevant ocean color platforms (past, present, and future), and their specifications. For long-term consistent time series (1997 – present), the current recommendation is to utilize the Ocean Colour Climate Change Initiative (OC-CCI) dataset, which merges multiple satellite data records and bias corrects sensor differences. This dataset is updated quarterly, and does not yet provide a near real time product.",
+    "crumbs": [
+      "Overview",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Ocean color satellites</span>"
+    ]
+  },
+  {
+    "objectID": "content/2__products.html",
+    "href": "content/2__products.html",
+    "title": "5  Hyperspectral products",
+    "section": "",
+    "text": "Ocean color sensors provide core information on\n\nWhat is the color of the ocean? (Rrs)\nHow much light is there? (PAR/Kd)\n\nFrom these core measurements, we can compute other derived products, which help us understand the biological organisms in the water:\n\nWhat/who is there? (phytoplankton composition, SPM)\nHow much of it is there? (chlorophyll concentration, particulate/phytoplankton carbon)\nAre they shiny or colorful? (IOPs)\nWhat are they doing? (Primary productivity)\nHow are they doing? (Fluorescence Line Height)\n\nThe next pages will go into more detail on each of these.",
+    "crumbs": [
+      "Hyperspectral products",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Hyperspectral products</span>"
+    ]
+  },
+  {
+    "objectID": "content/2_chla.html",
+    "href": "content/2_chla.html",
+    "title": "6  Chlorophyll-a",
+    "section": "",
+    "text": "What is it?\nChlorophyll-a (Figure 6.1) is a pigment contained within all phytoplankton and cyanobacteria cells. It is an estimate of algal biomass that is used for mapping the distribution of phytoplankton over time and space.",
+    "crumbs": [
+      "Hyperspectral products",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Chlorophyll-a</span>"
+    ]
+  },
+  {
+    "objectID": "content/2_chla.html#how-does-it-impact-aquaculturefisheries",
+    "href": "content/2_chla.html#how-does-it-impact-aquaculturefisheries",
+    "title": "6  Chlorophyll-a",
+    "section": "How does it impact Aquaculture/Fisheries?",
+    "text": "How does it impact Aquaculture/Fisheries?\nChlorophyll-a is a useful proxy of the biomass of phytoplankton in the water, the food source to filter feeding organisms and zooplankton. This parameter has been utilized for aquaculture siting, farm aquaculture resource management models, HAB forecasts, species distribution models (fish, mammals, top predators, other highly migratory species), ecosystem models, ecosystem status monitoring, as a predictor of unregulated fishing activity, and more.",
+    "crumbs": [
+      "Hyperspectral products",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Chlorophyll-a</span>"
+    ]
+  },
+  {
+    "objectID": "content/2_chla.html#what-are-the-limitationscaveats",
+    "href": "content/2_chla.html#what-are-the-limitationscaveats",
+    "title": "6  Chlorophyll-a",
+    "section": "What are the limitations/caveats?",
+    "text": "What are the limitations/caveats?\nCurrently, chlorophyll-a can be confused with other dissolved materials in the water, and it can be over-estimated in coastal regions, particularly in areas with river inputs or sediment resuspension. It is useful to note that the amount of chlorophyll-a in a phytoplankton cell can vary substantially based on physiological and environmental conditions, and thus, it is possible that increases in chlorophyll-a do not explicitly represent increases in biomass.",
+    "crumbs": [
+      "Hyperspectral products",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Chlorophyll-a</span>"
+    ]
+  },
+  {
+    "objectID": "content/2_chla.html#does-hyperspectral-directly-improveenable-this-product",
+    "href": "content/2_chla.html#does-hyperspectral-directly-improveenable-this-product",
+    "title": "6  Chlorophyll-a",
+    "section": "Does HYPERSPECTRAL directly improve/enable this product?",
+    "text": "Does HYPERSPECTRAL directly improve/enable this product?\nHaving more information about the other components of the water will help separate the living from non-living components, and should improve the performance of the chlorophyll- a product substantially. Many efforts at improving chlorophyll-a have been attempted using regional tuning methods, generalized additive models, and dynamic optical water types, or applying machine learning techniques and neural networks, but lack unified community consensus or adoption.\n\n\n\n\n\n\nFigure 6.1: Projection of PACE-derived chlor_a in the North Atlantic Ocean; May 13, 2024.",
+    "crumbs": [
+      "Hyperspectral products",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Chlorophyll-a</span>"
+    ]
+  },
+  {
+    "objectID": "content/2_chla.html#python",
+    "href": "content/2_chla.html#python",
+    "title": "6  Chlorophyll-a",
+    "section": "Python",
+    "text": "Python\n\n\n\n\n\n\nCode to access data\n\n\n\n\n\n%%time\n# 1 minute or so\n# Authenticate to NASA\n%%time\n# Authenticate to NASA\nimport earthaccess\nauth = earthaccess.login(strategy=\"interactive\", persist=True)\n    \n# (xmin=-73.5, ymin=33.5, xmax=-43.5, ymax=43.5)\nbbox = (-75.5, 38.0, -69.0, 42.5)\nimport earthaccess\nresults = earthaccess.search_data(\n    short_name = \"PACE_OCI_L2_BGC\",\n    temporal = (\"2024-05-13\", \"2024-05-13\"),\n    bounding_box = bbox\n)\nfileset = earthaccess.open(results);\n\n# load data\nimport xarray as xr\nds = xr.open_dataset(fileset[0], group=\"geophysical_data\")\n\n# Add coords\n# Add coords\nnav = xr.open_dataset(fileset[0], group=\"navigation_data\")\nnav = nav.set_coords((\"longitude\", \"latitude\"))\ndataset = xr.merge((ds[\"chlor_a\"], nav.coords))\n\n# Subset\nchla_box = dataset.where(\n    (\n        (dataset[\"latitude\"] &gt; 38.0)\n        & (dataset[\"latitude\"] &lt; 42.5)\n        & (dataset[\"longitude\"] &gt; -75.5)\n        & (dataset[\"longitude\"] &lt; -69.0)\n    ),\n    drop = True\n)\n\n\n\n\n\n\n\n\n\nMake one plot\n\n\n\n\n\nimport matplotlib.pyplot as plt\nfrom matplotlib.colors import LogNorm\n\nchl = chla_box[\"chlor_a\"].where(chla_box[\"chlor_a\"] &gt; 0)\n\nplot = plt.pcolormesh(\n    chla_box[\"longitude\"], chla_box[\"latitude\"], chl,\n    cmap=\"jet\", norm=LogNorm(vmin=1e-2, vmax=1e1), shading=\"auto\"\n)\ncbar = plt.colorbar(plot)\ncbar.set_label(\"Chlorophyll-a (mg m⁻³)\", fontsize=16, fontweight=\"bold\")\n\nplt.xlim(-75.5, -69.0)\nplt.ylim(38.0, 42.5)\nplt.xlabel(\"Longitude\")\nplt.ylabel(\"Latitude\")\nplt.title(\"Chlorophyll-a (Log Scale)\")\n\nplt.show()",
+    "crumbs": [
+      "Hyperspectral products",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Chlorophyll-a</span>"
+    ]
+  },
+  {
+    "objectID": "content/2_phytoplankton_carbon.html",
+    "href": "content/2_phytoplankton_carbon.html",
+    "title": "7  Phytoplankton carbon",
+    "section": "",
+    "text": "What is it?\nThe phytoplankton carbon product (Figure 7.1) expresses the concentration of phytoplankton in terms of carbon concentration, instead of chlorophyll-a. Contrasting from the chlorophyll- a product, phytoplankton carbon is derived from an empirical relationship to the particle backscattering properties (see Product 7) of the water.",
+    "crumbs": [
+      "Hyperspectral products",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Phytoplankton carbon</span>"
+    ]
+  },
+  {
+    "objectID": "content/2_phytoplankton_carbon.html#how-does-it-impact-aquaculturefisheries",
+    "href": "content/2_phytoplankton_carbon.html#how-does-it-impact-aquaculturefisheries",
+    "title": "7  Phytoplankton carbon",
+    "section": "How does it impact Aquaculture/Fisheries?",
+    "text": "How does it impact Aquaculture/Fisheries?\nSome fisheries applications may prefer to work in units of carbon biomass instead of pigment-based (i.e., chlorophyll-a) biomass. A constant chlorophyll-a value can represent a wide array of cell concentrations, due to environmental conditions and individual cell physiology/stress. For example, individual phytoplankton can produce more chlorophyll- a/cell in low-light conditions without changing the actual number of cells. The carbon product is not subject to these variations, and is a more direct indicator of phytoplankton biomass. Modelers may also be interested in computing a carbon to chlorophyll ratio to tease out environmental or species variations, and this is obtained as carbon_phyto ÷ chlor_a.",
+    "crumbs": [
+      "Hyperspectral products",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Phytoplankton carbon</span>"
+    ]
+  },
+  {
+    "objectID": "content/2_phytoplankton_carbon.html#what-are-the-limitationscaveats",
+    "href": "content/2_phytoplankton_carbon.html#what-are-the-limitationscaveats",
+    "title": "7  Phytoplankton carbon",
+    "section": "What are the limitations/caveats?",
+    "text": "What are the limitations/caveats?\nThis product was empirically tuned with field data, but it is not currently representative of optically complex waters. The performance in coastal regions remains untested. This product relies on the “inherent optical property (IOP)” suite of ocean color products, and thus can sometimes fail to arrive at a solution (i.e., no data) in waters with extreme scattering or chromophoric dissolved organic matter (CDOM) concentrations.",
+    "crumbs": [
+      "Hyperspectral products",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Phytoplankton carbon</span>"
+    ]
+  },
+  {
+    "objectID": "content/2_phytoplankton_carbon.html#does-hyperspectral-directly-improveenable-this-product",
+    "href": "content/2_phytoplankton_carbon.html#does-hyperspectral-directly-improveenable-this-product",
+    "title": "7  Phytoplankton carbon",
+    "section": "Does HYPERSPECTRAL directly improve/enable this product?",
+    "text": "Does HYPERSPECTRAL directly improve/enable this product?\nOperational improvements to IOP backscatter products using hyperspectral data are anticipated, but still in development (at the time of this publication).\n\n\n\n\n\n\nFigure 7.1: Projection of PACE-derived carbon_phyto in the North Atlantic Ocean; May 13, 2024.",
+    "crumbs": [
+      "Hyperspectral products",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Phytoplankton carbon</span>"
+    ]
+  },
+  {
+    "objectID": "content/2_phytoplankton_carbon.html#python",
+    "href": "content/2_phytoplankton_carbon.html#python",
+    "title": "7  Phytoplankton carbon",
+    "section": "Python",
+    "text": "Python\n\n\n\n\n\n\nCode to access data\n\n\n\n\n\n%%time\n# 1 minute or so\n# Authenticate to NASA\n%%time\n# Authenticate to NASA\nimport earthaccess\nauth = earthaccess.login(strategy=\"interactive\", persist=True)\n    \n# (xmin=-73.5, ymin=33.5, xmax=-43.5, ymax=43.5)\nbbox = (-75.5, 38.0, -69.0, 42.5)\nimport earthaccess\nresults = earthaccess.search_data(\n    short_name = \"PACE_OCI_L2_BGC\",\n    temporal = (\"2024-05-13\", \"2024-05-13\"),\n    bounding_box = bbox\n)\nfileset = earthaccess.open(results);\n\n# load data\nimport xarray as xr\nds = xr.open_dataset(fileset[0], group=\"geophysical_data\")\n\n# Add coords\n# Add coords\nnav = xr.open_dataset(fileset[0], group=\"navigation_data\")\nnav = nav.set_coords((\"longitude\", \"latitude\"))\ndataset = xr.merge((ds[\"carbon_phyto\"], nav.coords))\n\n# Subset\ncarbon_phyto_box = dataset.where(\n    (\n        (dataset[\"latitude\"] &gt; 38.0)\n        & (dataset[\"latitude\"] &lt; 42.5)\n        & (dataset[\"longitude\"] &gt; -75.5)\n        & (dataset[\"longitude\"] &lt; -69.0)\n    ),\n    drop = True\n)\n\n\n\n\n\n\n\n\n\nMake one plot\n\n\n\n\n\nimport matplotlib.pyplot as plt\nfrom matplotlib.colors import LogNorm\n\ncp = carbon_phyto_box[\"carbon_phyto\"].where(carbon_phyto_box[\"carbon_phyto\"] &gt; 0)\n\nplot = plt.pcolormesh(\n    carbon_phyto_box[\"longitude\"], carbon_phyto_box[\"latitude\"], cp,\n    cmap=\"jet\", norm=LogNorm(vmin=1e1, vmax=500), shading=\"auto\"\n)\ncbar = plt.colorbar(plot)\ncbar.set_label(\"Phytoplankton Carbon (mg m⁻³)\", fontsize=16, fontweight=\"bold\")\n\nplt.xlim(-75.5, -69.0)\nplt.ylim(38.0, 42.5)\nplt.xlabel(\"Longitude\")\nplt.ylabel(\"Latitude\")\nplt.title(\"Phytoplankton Carbon (Log Scale)\")\n\nplt.show()",
+    "crumbs": [
+      "Hyperspectral products",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Phytoplankton carbon</span>"
+    ]
+  },
+  {
+    "objectID": "content/2_kd.html",
+    "href": "content/2_kd.html",
+    "title": "8  Diffuse attenuation coefficients (Kd)",
+    "section": "",
+    "text": "What is it?\nAs light enters the water column, it is attenuated exponentially with depth until it has been absorbed completely. The light attenuation coefficient (Kd) is a measure of the exponential slope of this light extinction, providing an indicator of how deep light can penetrate into the water column. This enables the quantification of light intensity and quality at any depth.",
+    "crumbs": [
+      "Hyperspectral products",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Diffuse attenuation coefficients (Kd)</span>"
+    ]
+  },
+  {
+    "objectID": "content/2_kd.html#how-does-it-impact-aquaculturefisheries",
+    "href": "content/2_kd.html#how-does-it-impact-aquaculturefisheries",
+    "title": "8  Diffuse attenuation coefficients (Kd)",
+    "section": "How does it impact Aquaculture/Fisheries?",
+    "text": "How does it impact Aquaculture/Fisheries?\nLight influences all lifecycle stages of fish including egg and larvae survival, smolt timing, and maturation during the on-growing phase and broodstock spawning. Light attenuation changes can feasibly be used to effectively track aquaculture outflow, as well as incoming pollution sources. Light attenuation also impacts water visibility, and by extension fisheries catchability, foraging success, reproductive behavior, UV exposure, territoriality, and predation. Kd is also the term used to derive euphotic depth.",
+    "crumbs": [
+      "Hyperspectral products",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Diffuse attenuation coefficients (Kd)</span>"
+    ]
+  },
+  {
+    "objectID": "content/2_kd.html#what-are-the-limitationscaveats",
+    "href": "content/2_kd.html#what-are-the-limitationscaveats",
+    "title": "8  Diffuse attenuation coefficients (Kd)",
+    "section": "What are the limitations/caveats?",
+    "text": "What are the limitations/caveats?\nKd algorithms are among the more robust products offered in the ocean color suite, depending on how they are derived. Semi-analytical approaches reduce uncertainty in turbid, optically complex waters relative to more simple empirical approaches.",
+    "crumbs": [
+      "Hyperspectral products",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Diffuse attenuation coefficients (Kd)</span>"
+    ]
+  },
+  {
+    "objectID": "content/2_kd.html#does-hyperspectral-directly-improveenable-this-product",
+    "href": "content/2_kd.html#does-hyperspectral-directly-improveenable-this-product",
+    "title": "8  Diffuse attenuation coefficients (Kd)",
+    "section": "Does HYPERSPECTRAL directly improve/enable this product?",
+    "text": "Does HYPERSPECTRAL directly improve/enable this product?\nIt does, in that it offers a full suite of Kd coefficients across the visible spectrum. Historically, only the blue/green wavelength (490 nm) is utilized for most applications. With the full spectrum, the exact light quality can be determined at any depth, and also pinpoint the exact wavelength of light that penetrates the deepest into the water column, improving estimates of water visibility. Note, while computable, water visibility is not a standard operational product offering.",
+    "crumbs": [
+      "Hyperspectral products",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Diffuse attenuation coefficients (Kd)</span>"
+    ]
+  },
+  {
+    "objectID": "content/2_aph.html",
+    "href": "content/2_aph.html",
+    "title": "9  Spectral phytoplankton absorption coefficients (aph)",
+    "section": "",
+    "text": "What is it?\nThese absorption coefficients specifically define how light is absorbed by phytoplankton in the water column. This product partitions and isolates the phytoplankton component from the other absorbing materials in the water, like CDOM and other non-living components.",
+    "crumbs": [
+      "Hyperspectral products",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Spectral phytoplankton absorption coefficients (aph)</span>"
+    ]
+  },
+  {
+    "objectID": "content/2_aph.html#how-does-it-impact-aquaculturefisheries",
+    "href": "content/2_aph.html#how-does-it-impact-aquaculturefisheries",
+    "title": "9  Spectral phytoplankton absorption coefficients (aph)",
+    "section": "How does it impact Aquaculture/Fisheries?",
+    "text": "How does it impact Aquaculture/Fisheries?\nThe absorption of light by phytoplankton can vary by a factor of 4 or more at a constant chlorophyll-a value, so this parameter more accurately describes how much light has been utilized by living phytoplankton cells. This has implications for how much of this light energy will eventually be turned into biomass, and it is a central component of more advanced absorption- based primary productivity algorithms. As a standalone product, it partially helps mitigate the obscuring impact of other absorbing materials in the water, though not entirely.",
+    "crumbs": [
+      "Hyperspectral products",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Spectral phytoplankton absorption coefficients (aph)</span>"
+    ]
+  },
+  {
+    "objectID": "content/2_aph.html#what-are-the-limitationscaveats",
+    "href": "content/2_aph.html#what-are-the-limitationscaveats",
+    "title": "9  Spectral phytoplankton absorption coefficients (aph)",
+    "section": "What are the limitations/caveats?",
+    "text": "What are the limitations/caveats?\nWhile the magnitude of absorption is dynamic, the absolute shape of spectral absorption is currently based on a global average, and thus offer no real insights to differentiating phytoplankton pigment absorption and should not be used for this purpose. Keep in mind that not all absorbed light is allocated to photosynthetic processes (i.e. some absorbed energy is lost to heat and fluorescence). The performance of this product can vary, and does not perform well in highly-scattering, or very high CDOM water-types.",
+    "crumbs": [
+      "Hyperspectral products",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Spectral phytoplankton absorption coefficients (aph)</span>"
+    ]
+  },
+  {
+    "objectID": "content/2_aph.html#does-hyperspectral-directly-improveenable-this-product",
+    "href": "content/2_aph.html#does-hyperspectral-directly-improveenable-this-product",
+    "title": "9  Spectral phytoplankton absorption coefficients (aph)",
+    "section": "Does HYPERSPECTRAL directly improve/enable this product?",
+    "text": "Does HYPERSPECTRAL directly improve/enable this product?\nIt does, in that it offers a full suite of aph coefficients across the visible spectrum. PACE Science and Applications Team members are working to improve this product using new approaches to radiative transfer as well as machine learning techniques.",
+    "crumbs": [
+      "Hyperspectral products",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Spectral phytoplankton absorption coefficients (aph)</span>"
+    ]
+  },
+  {
+    "objectID": "content/2_adg.html",
+    "href": "content/2_adg.html",
+    "title": "10  Spectral non-algal particle plus dissolved organic matter absorption coefficients (adg)",
+    "section": "",
+    "text": "What is it?\nThese absorption coefficients specifically define how light is absorbed by the combined effect of non-living particles (detrital) and dissolved optically-active materials i.e. CDOM.",
+    "crumbs": [
+      "Hyperspectral products",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Spectral non-algal particle plus dissolved organic matter absorption coefficients (adg)</span>"
+    ]
+  },
+  {
+    "objectID": "content/2_adg.html#how-does-it-impact-aquaculturefisheries",
+    "href": "content/2_adg.html#how-does-it-impact-aquaculturefisheries",
+    "title": "10  Spectral non-algal particle plus dissolved organic matter absorption coefficients (adg)",
+    "section": "How does it impact Aquaculture/Fisheries?",
+    "text": "How does it impact Aquaculture/Fisheries?\nThe increased absorption of light by detritus+CDOM can indicate the presence of a declining phytoplankton bloom, or land-based detritus+CDOM from river input. In cases of known high river discharge events (e.g. after a storm event or heavy rainfall or ice melt), this product is a useful water mass tracer. CDOM has been found to be useful in source tracking of aquaculture as well as wastewater pollution.",
+    "crumbs": [
+      "Hyperspectral products",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Spectral non-algal particle plus dissolved organic matter absorption coefficients (adg)</span>"
+    ]
+  },
+  {
+    "objectID": "content/2_adg.html#what-are-the-limitationscaveats",
+    "href": "content/2_adg.html#what-are-the-limitationscaveats",
+    "title": "10  Spectral non-algal particle plus dissolved organic matter absorption coefficients (adg)",
+    "section": "What are the limitations/caveats?",
+    "text": "What are the limitations/caveats?\nWhile the algorithm is tunable, its standard configuration defines a constant “shape” of detrital/CDOM absorption, so there is no information that can be derived about the origin of the materials other than through subjective spatial-temporal context. Note, this is a combined detrital matter + CDOM product, and not a standalone CDOM product (TBD).",
+    "crumbs": [
+      "Hyperspectral products",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Spectral non-algal particle plus dissolved organic matter absorption coefficients (adg)</span>"
+    ]
+  },
+  {
+    "objectID": "content/2_adg.html#does-hyperspectral-directly-improveenable-this-product",
+    "href": "content/2_adg.html#does-hyperspectral-directly-improveenable-this-product",
+    "title": "10  Spectral non-algal particle plus dissolved organic matter absorption coefficients (adg)",
+    "section": "Does HYPERSPECTRAL directly improve/enable this product?",
+    "text": "Does HYPERSPECTRAL directly improve/enable this product?\nIt does, in that it offers a full suite of adg coefficients across the visible spectrum. PACE Science and Applications Team members are working to improve this product using new approaches to radiative transfer as well as machine learning techniques. These improved products, including the separation of ad (detritus) from ag (CDOM, or ‘gelbstoff’) are TBD.",
+    "crumbs": [
+      "Hyperspectral products",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Spectral non-algal particle plus dissolved organic matter absorption coefficients (adg)</span>"
+    ]
+  },
+  {
+    "objectID": "content/2_bbp.html",
+    "href": "content/2_bbp.html",
+    "title": "11  Spectral particle backscattering coefficients (bbp)",
+    "section": "",
+    "text": "What is it?\nThese backscatter coefficients specifically define how light is scattered in the backwards direction by particles in the water. This product provides an indicator of the concentration of particles in the ocean and a proxy indicator of particulate carbon concentrations.",
+    "crumbs": [
+      "Hyperspectral products",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Spectral particle backscattering coefficients (bbp)</span>"
+    ]
+  },
+  {
+    "objectID": "content/2_bbp.html#how-does-it-impact-aquaculturefisheries",
+    "href": "content/2_bbp.html#how-does-it-impact-aquaculturefisheries",
+    "title": "11  Spectral particle backscattering coefficients (bbp)",
+    "section": "How does it impact Aquaculture/Fisheries?",
+    "text": "How does it impact Aquaculture/Fisheries?\nMany phytoplankton exhibit unique backscattering characteristics, primarily as a function of cell size, and sometime composition (e.g. Coccolithophore blooms). Backscatter is also used to derive Particulate Inorganic Carbon (PIC) estimates from satellites. Particle backscatter is a particularly useful tool to determine high sediment loads in nearshore environments, which tends to heavily scatter light. High sediment loads can cause gill saturation in certain oyster species, and some fish species exhibit hypersensitivity to suspended sediment. While not a direct measurement of suspended particulate matter (SPM), it can be used to develop those products.",
+    "crumbs": [
+      "Hyperspectral products",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Spectral particle backscattering coefficients (bbp)</span>"
+    ]
+  },
+  {
+    "objectID": "content/2_bbp.html#what-are-the-limitationscaveats",
+    "href": "content/2_bbp.html#what-are-the-limitationscaveats",
+    "title": "11  Spectral particle backscattering coefficients (bbp)",
+    "section": "What are the limitations/caveats?",
+    "text": "What are the limitations/caveats?\nThe backscatter product is one of the most robust products offered in the “inherent optical property (IOP)” suite of ocean color products. The only caveat is that the IOP algorithms can sometimes fail to arrive at a solution (i.e. no data) in waters with extreme scattering or CDOM concentrations. Nearshore environments present challenges in disentangling phytoplankton backscatter from other optical constituents (re-suspended sediment, SPM, etc.).",
+    "crumbs": [
+      "Hyperspectral products",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Spectral particle backscattering coefficients (bbp)</span>"
+    ]
+  },
+  {
+    "objectID": "content/2_bbp.html#does-hyperspectral-directly-improveenable-this-product",
+    "href": "content/2_bbp.html#does-hyperspectral-directly-improveenable-this-product",
+    "title": "11  Spectral particle backscattering coefficients (bbp)",
+    "section": "Does HYPERSPECTRAL directly improve/enable this product?",
+    "text": "Does HYPERSPECTRAL directly improve/enable this product?\nIt does, in that it offers a full suite of bbp coefficients across the visible spectrum. PACE Science and Applications Team members are working to improve this product using new approaches to radiative transfer as well as machine learning techniques. These improved products are TBD.",
+    "crumbs": [
+      "Hyperspectral products",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Spectral particle backscattering coefficients (bbp)</span>"
+    ]
+  },
+  {
+    "objectID": "content/2_par.html",
+    "href": "content/2_par.html",
+    "title": "12  Photosynthetically available radiation (PAR)",
+    "section": "",
+    "text": "What is it?\nPAR is defined as the quantum energy flux from the Sun in the 400 - 700 nm range. There are several data products available in PACE data files. Scalar irradiance is derived by taking the sum of light from all angles onto a point on the ocean - how much light is hitting the ocean. Planar irradiance scalesthe amount of light based on the cosine of the direction it comes from, and likely won’t be used for fisheries/aquaculture applications. There are above water products (how much hits the surface), and below water product which take into account the index of refraction as you cross the surface of the ocean’s water (i.e. how much of that is actually getting to the contents of the water). In most cases, user would likely want to use the par_day_scalar_below product.",
+    "crumbs": [
+      "Hyperspectral products",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Photosynthetically available radiation (PAR)</span>"
+    ]
+  },
+  {
+    "objectID": "content/2_par.html#how-does-it-impact-aquaculturefisheries",
+    "href": "content/2_par.html#how-does-it-impact-aquaculturefisheries",
+    "title": "12  Photosynthetically available radiation (PAR)",
+    "section": "How does it impact Aquaculture/Fisheries?",
+    "text": "How does it impact Aquaculture/Fisheries?\nPAR directly impacts the quantum yield of photosynthesis, which is essentially a measure of how many photons of light are absorbed v. how much of that is actually fixed into carbon, i.e. photosynthetic efficiency. Too much PAR can cause photo-inhibition of many cultured seaweeds. While not the most significant factor, one study showed that PAR contributed to variability in Catch per Unit Effort more than SST and fishing hour.",
+    "crumbs": [
+      "Hyperspectral products",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Photosynthetically available radiation (PAR)</span>"
+    ]
+  },
+  {
+    "objectID": "content/2_par.html#what-are-the-limitationscaveats",
+    "href": "content/2_par.html#what-are-the-limitationscaveats",
+    "title": "12  Photosynthetically available radiation (PAR)",
+    "section": "What are the limitations/caveats?",
+    "text": "What are the limitations/caveats?\nIn spite of the visible artifact in the image below (be patient, PACE is still coming online), PAR is a fairly robust product. Implementation of this algorithm is contingent on the availability of observed top-of-atmosphere radiances in the visible spectral regime that do not saturate over clouds, which is probably not a problem for PACE.",
+    "crumbs": [
+      "Hyperspectral products",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Photosynthetically available radiation (PAR)</span>"
+    ]
+  },
+  {
+    "objectID": "content/2_par.html#does-hyperspectral-directly-improveenable-this-product",
+    "href": "content/2_par.html#does-hyperspectral-directly-improveenable-this-product",
+    "title": "12  Photosynthetically available radiation (PAR)",
+    "section": "Does HYPERSPECTRAL directly improve/enable this product?",
+    "text": "Does HYPERSPECTRAL directly improve/enable this product?\nThe scalar/planar above/below water products are new to PACE.",
+    "crumbs": [
+      "Hyperspectral products",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Photosynthetically available radiation (PAR)</span>"
+    ]
+  },
+  {
+    "objectID": "content/2_rrs.html",
+    "href": "content/2_rrs.html",
+    "title": "13  Remote sensing reflectance (Rrs)",
+    "section": "",
+    "text": "What is it?\nThe remote sensing reflectance is the base unit by which most ocean color algorithms are built on. It is a direct measure of the water-leaving reflectance, after the atmosphere and surface reflectance effects have been removed. Each wavelength of color has its own reflectance value.",
+    "crumbs": [
+      "Hyperspectral products",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Remote sensing reflectance (Rrs)</span>"
+    ]
+  },
+  {
+    "objectID": "content/2_rrs.html#how-does-it-impact-aquaculturefisheries",
+    "href": "content/2_rrs.html#how-does-it-impact-aquaculturefisheries",
+    "title": "13  Remote sensing reflectance (Rrs)",
+    "section": "How does it impact Aquaculture/Fisheries?",
+    "text": "How does it impact Aquaculture/Fisheries?\nThese products may be preferred for advanced users who want to customize or build their own products for a regional/local application. This raw color information removes any the elements of uncertainty introduced by assumptions made during “product” development. If there are subtle features in the color reflectance spectrum that are unique to a phytoplankton species, this is currently the only set of products that will retain this information, though it is (currently) up to the user to determine what those features are. Some published algorithms for Harmful Algal Blooms can be reconstructed using the reflectance channels (see section 3).",
+    "crumbs": [
+      "Hyperspectral products",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Remote sensing reflectance (Rrs)</span>"
+    ]
+  },
+  {
+    "objectID": "content/2_rrs.html#what-are-the-limitationscaveats",
+    "href": "content/2_rrs.html#what-are-the-limitationscaveats",
+    "title": "13  Remote sensing reflectance (Rrs)",
+    "section": "What are the limitations/caveats?",
+    "text": "What are the limitations/caveats?\nThe remote sensing reflectance is subject to uncertainties introduced in the removal of the atmospheric signal. These products may underperform, or be expressed as negative values, especially in areas with complex aerosol loadings (near urban areas), or in near-coastal regions.",
+    "crumbs": [
+      "Hyperspectral products",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Remote sensing reflectance (Rrs)</span>"
+    ]
+  },
+  {
+    "objectID": "content/2_rrs.html#does-hyperspectral-directly-improveenable-this-product",
+    "href": "content/2_rrs.html#does-hyperspectral-directly-improveenable-this-product",
+    "title": "13  Remote sensing reflectance (Rrs)",
+    "section": "Does HYPERSPECTRAL directly improve/enable this product?",
+    "text": "Does HYPERSPECTRAL directly improve/enable this product?\nFor context, relative to MODIS (10 color bands) or VIIRS (5 color bands), PACE offers 120 visible color bands (+ additional UV bands) by which to develop algorithms from. PACE Science and Applications Team members are working to improve the removal of the atmosphere, and thus improve the reflectance product.",
+    "crumbs": [
+      "Hyperspectral products",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Remote sensing reflectance (Rrs)</span>"
+    ]
+  },
+  {
+    "objectID": "content/2_rrs.html#python",
+    "href": "content/2_rrs.html#python",
+    "title": "13  Remote sensing reflectance (Rrs)",
+    "section": "Python",
+    "text": "Python\n\n\n\n\n\n\nCode to access data\n\n\n\n\n\n%%time\n# 1 minute or so\n# Authenticate to NASA\nimport earthaccess\nauth = earthaccess.login(strategy=\"interactive\", persist=True)\n    \n# (xmin=-73.5, ymin=33.5, xmax=-43.5, ymax=43.5)\nbbox = (-75.5, 38.0, -69.0, 42.5)\nimport earthaccess\nresults = earthaccess.search_data(\n    short_name = \"PACE_OCI_L2_AOP\",\n    temporal = (\"2024-05-13\", \"2024-05-13\"),\n    bounding_box = bbox\n)\nfileset = earthaccess.open(results);\n\n# load data\nimport xarray as xr\nds = xr.open_dataset(fileset[0], group=\"geophysical_data\")\n\n# Add coords\nnav = xr.open_dataset(fileset[0], group=\"navigation_data\")\nnav = nav.set_coords((\"longitude\", \"latitude\"))\nwave = xr.open_dataset(fileset[0], group=\"sensor_band_parameters\")\nwave = wave.set_coords((\"wavelength_3d\"))\ndataset = xr.merge((ds[\"Rrs\"], nav.coords, wave.coords))\n\n# Subset\nrrs_box = dataset.where(\n    (\n        (dataset[\"latitude\"] &gt; 38.0)\n        & (dataset[\"latitude\"] &lt; 42.5)\n        & (dataset[\"longitude\"] &gt; -75.5)\n        & (dataset[\"longitude\"] &lt; -69.0)\n    ),\n    drop = True\n)\n\n\n\n\n\n\n\n\n\nMake one plot\n\n\n\n\n\nimport matplotlib.pyplot as plt\n\nrrs = rrs_box[\"Rrs\"].sel(wavelength_3d = 380)\nplot = rrs.plot(x=\"longitude\", y=\"latitude\", cmap=\"jet\", vmin=0, vmax=0.005)\n\n# Set x and y limits\nplot.axes.set_xlim(-75.5, -69.0)\nplot.axes.set_ylim(38.0, 42.5)\n\n# Customize colorbar label\nwave_string = \"380\"  # or str(wavelength) if dynamic\nplot.colorbar.set_label(f\"Rrs {wave_string} (sr⁻¹)\", fontsize=16, fontweight=\"bold\")\n\nplt.show()\n\n\n\n\n\n\n\n\n\nCode to generate 6 panel figure\n\n\n\n\n\nimport matplotlib.pyplot as plt\nimport matplotlib.colors as colors\n\n# List of wavelengths to plot\nwavelengths = [380, 442, 490, 550, 670, 588]\n\n# Create figure and axes\nfig, axes = plt.subplots(3, 2, figsize=(12, 12), constrained_layout=True)\naxes = axes.flatten()\n\n# Loop through wavelengths and plot\nfor i, wl in enumerate(wavelengths):\n    ax = axes[i]\n    \n    # Extract Rrs and mask zeros (for log or safety)\n    rrs = rrs_box[\"Rrs\"].sel(wavelength_3d=wl)\n    \n    # Plot onto the provided axis\n    img = rrs.plot(\n        ax=ax,\n        x=\"longitude\",\n        y=\"latitude\",\n        cmap=\"jet\",\n        vmin=0,\n        vmax=0.005,\n        add_colorbar=False  # We'll add our own\n    )\n    \n    # Set limits\n    ax.set_xlim(-75.5, -69.0)\n    ax.set_ylim(38.0, 42.5)\n    \n    # Add colorbar\n    cbar = fig.colorbar(img, ax=ax, orientation=\"vertical\", shrink=0.8)\n    cbar.set_label(f\"Rrs {wl} (sr⁻¹)\", fontsize=12, fontweight=\"bold\")\n    \n    # Optional: title or annotation\n    ax.set_title(f\"Wavelength {wl} nm\")\n\n# Turn off unused axes (if any)\nfor j in range(len(wavelengths), len(axes)):\n    fig.delaxes(axes[j])\n\nplt.show()",
+    "crumbs": [
+      "Hyperspectral products",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Remote sensing reflectance (Rrs)</span>"
+    ]
+  },
+  {
+    "objectID": "content/2_avw.html",
+    "href": "content/2_avw.html",
+    "title": "14  Apparent Visible Wavelength (AVW)",
+    "section": "",
+    "text": "What is it?\nThe Apparent Visible Wavelength (AVW) is an optical water mass classification index that is sensitive to changes in the water’s reflectance spectrum. Since the entire visible-range spectrum is utilized in the calculation of AVW, this product ensures that any diagnostic signals present in the reflectance signal are considered, and affords the opportunity to describe and analyze subtle shifts in color.",
+    "crumbs": [
+      "Hyperspectral products",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Apparent Visible Wavelength</span>"
+    ]
+  },
+  {
+    "objectID": "content/2_avw.html#how-does-it-impact-aquaculturefisheries",
+    "href": "content/2_avw.html#how-does-it-impact-aquaculturefisheries",
+    "title": "14  Apparent Visible Wavelength (AVW)",
+    "section": "How does it impact Aquaculture/Fisheries?",
+    "text": "How does it impact Aquaculture/Fisheries?\nUnlike other ocean color products, the AVW is not a derived geophysical variable, but instead an objective descriptor of the ocean’s color. This makes it impervious to algorithm-induced biases, and thus useful and consistent across optically complex environments. This is a useful monitoring tool to assess if there are any changes to the color of the water, and if so, what direction the color is shifting (i.e. more red or more blue). While the attribution/cause of shifts in the water color are not elucidated with the product, it serves as an early indicator to detect changes in the optical water properties.",
+    "crumbs": [
+      "Hyperspectral products",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Apparent Visible Wavelength</span>"
+    ]
+  },
+  {
+    "objectID": "content/2_avw.html#what-are-the-limitationscaveats",
+    "href": "content/2_avw.html#what-are-the-limitationscaveats",
+    "title": "14  Apparent Visible Wavelength (AVW)",
+    "section": "What are the limitations/caveats?",
+    "text": "What are the limitations/caveats?\nThis product relies on the accuracy of remote sensing reflectance products, which are subject to uncertainties introduced in the removal of the atmospheric signal.",
+    "crumbs": [
+      "Hyperspectral products",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Apparent Visible Wavelength</span>"
+    ]
+  },
+  {
+    "objectID": "content/2_avw.html#does-hyperspectral-directly-improveenable-this-product",
+    "href": "content/2_avw.html#does-hyperspectral-directly-improveenable-this-product",
+    "title": "14  Apparent Visible Wavelength (AVW)",
+    "section": "Does HYPERSPECTRAL directly improve/enable this product?",
+    "text": "Does HYPERSPECTRAL directly improve/enable this product?\nThis product was developed specifically for hyperspectral applications, but can be “calibrated” for multi-spectral sensors to provide time-series continuity. PACE is the first mission to offer AVW as a product under “provisional” status.",
+    "crumbs": [
+      "Hyperspectral products",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Apparent Visible Wavelength</span>"
+    ]
+  },
+  {
+    "objectID": "content/2_avw.html#python",
+    "href": "content/2_avw.html#python",
+    "title": "14  Apparent Visible Wavelength (AVW)",
+    "section": "Python",
+    "text": "Python\n\n\n\n\n\n\nGet and process data\n\n\n\n\n\n%%time\n# Authenticate to NASA\nimport earthaccess\nauth = earthaccess.login(strategy=\"interactive\", persist=True)\n    \n# (xmin=-73.5, ymin=33.5, xmax=-43.5, ymax=43.5)\nbbox = (-75.5, 38.0, -69.0, 42.5)\nimport earthaccess\nresults = earthaccess.search_data(\n    short_name = \"PACE_OCI_L2_AOP\",\n    temporal = (\"2024-05-13\", \"2024-05-13\"),\n    bounding_box = bbox\n)\nfileset = earthaccess.open(results);\n\n# load data\nimport xarray as xr\nds = xr.open_dataset(fileset[0], group=\"geophysical_data\")\n\n# Add coords\n# Add coords\nnav = xr.open_dataset(fileset[0], group=\"navigation_data\")\nnav = nav.set_coords((\"longitude\", \"latitude\"))\nwave = xr.open_dataset(fileset[0], group=\"sensor_band_parameters\")\nwave = wave.set_coords((\"wavelength_3d\"))\ndataset = xr.merge((ds[\"avw\"], nav.coords, wave.coords))\n\n# Subset\navw_box = dataset.where(\n    (\n        (dataset[\"latitude\"] &gt; 38.0)\n        & (dataset[\"latitude\"] &lt; 42.5)\n        & (dataset[\"longitude\"] &gt; -75.5)\n        & (dataset[\"longitude\"] &lt; -69.0)\n    ),\n    drop = True\n)\n\n\n\n\n\n\n\n\n\nMake one plot\n\n\n\n\n\n# make one plot\nimport matplotlib.pyplot as plt\n\nplot = avw_box[\"avw\"].plot(x=\"longitude\", y=\"latitude\", cmap=\"jet\", vmin=450, vmax=580)\n\n# Set x and y limits\nplot.axes.set_xlim(-75.5, -69.0)\nplot.axes.set_ylim(38.0, 42.5)\n\n# Customize colorbar label\nplot.colorbar.set_label(\"AVW (nm)\", fontsize=16, fontweight=\"bold\")\n\nplt.show()",
+    "crumbs": [
+      "Hyperspectral products",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Apparent Visible Wavelength</span>"
+    ]
+  }
+]

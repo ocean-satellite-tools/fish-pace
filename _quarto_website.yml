@@ -1,0 +1,84 @@
+project: 
+  type: website
+  render:
+    - "*.*"
+    - "!notebooks/*.ipynb"
+
+execute:
+  freeze: auto
+date: now
+date-format: "YYYY-MM-DDTHH:mm"
+website:
+  page-navigation: true  
+  title: "Hyperspectral products for fisheries"
+  favicon: images/favicon.png
+  site-url: https://ocean-satellite-tools.github.io/fish-pace
+  repo-url: https://github.com/ocean-satellite-tools/fish-pace
+  repo-actions: [edit, issue, source]
+  
+  page-footer: <img src="https://raw.githubusercontent.com/nmfs-opensci/assets/main/logo/nmfs-opensci-logo3.png" alt="NMFS OpenSci" style="width:200px"><br />Fish-PACE HackWeek (2025)
+ 
+  sidebar:
+    title: "Hyperspectral products for fisheries and aquaculture"
+    pinned: true
+    align: center
+    tools: 
+      - icon: globe
+        href: https://github.com/ocean-satellite-tools
+        text: "GH org"
+      - icon: github
+        href: https://github.com/ocean-satellite-tools/fish-pace
+        text: "repo"
+
+    style: "docked"
+    search: true
+    collapse-level: 1
+    toc-expand: false
+    contents:
+      - text: "Home"
+        href: index.html
+      - section: "Overview"
+        contents:
+          - text: "Ocean color"
+            href: content/1_introduction.md
+          - text: "Hyperspectral"
+            href: content/1_hyperspectral.md
+          - text: "Which satellites?"
+            href: content/1_which_satellites.md
+      - section: "Hyperspectral products"
+        href: content/2__products.md
+        contents:
+          - text: "Chlorophyll-a"
+            href: content/2_chla.html
+          - text: "Phytoplankton carbon"
+            href: content/2_phytoplankton_carbon.html
+          - text: "Diffuse attenuation coefficients"
+            href: content/2_kd.md
+          - text: "Phyto absorption coefficients"
+            href: content/2_aph.md
+          - text: "Non-phyto absorption coefficients"
+            href: content/2_adg.md
+          - text: "Spectral particle backscattering coefficients"
+            href: content/2_bbp.md
+          - text: "Photosynthetically available radiation"
+            href: content/2_par.md
+          - text: "Remote sensing reflectance"
+            href: content/2_rrs.html
+          - text: "Apparent Visible Wavelength"
+            href: content/2_avw.html
+
+format:
+  html:
+    theme:
+      light: cosmo
+      dark: [cosmo, theme-dark.scss]
+    code-background: true
+    code-copy: true
+    css: styles.css
+    toc: true
+    toc-depth: 2
+    include-before-body: translate.html
+
+filters:
+  - include-files.lua
+  - quarto

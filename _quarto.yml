@@ -1,71 +1,47 @@
 project: 
-  type: website
+  type: book
   render:
     - "*.*"
     - "!notebooks/*.ipynb"
 
 execute:
   freeze: auto
+
 date: now
 date-format: "YYYY-MM-DDTHH:mm"
-website:
-  page-navigation: true  
+
+book:
   title: "Hyperspectral products for fisheries"
+  subtitle: "Hyperspectral products for fisheries and aquaculture"
   favicon: images/favicon.png
   site-url: https://ocean-satellite-tools.github.io/fish-pace
   repo-url: https://github.com/ocean-satellite-tools/fish-pace
   repo-actions: [edit, issue, source]
-  
-  page-footer: <img src="https://raw.githubusercontent.com/nmfs-opensci/assets/main/logo/nmfs-opensci-logo3.png" alt="NMFS OpenSci" style="width:200px"><br />Fish-PACE HackWeek (2025)
- 
-  sidebar:
-    title: "Hyperspectral products for fisheries and aquaculture"
-    pinned: true
-    align: center
-    tools: 
-      - icon: globe
-        href: https://github.com/ocean-satellite-tools
-        text: "GH org"
-      - icon: github
-        href: https://github.com/ocean-satellite-tools/fish-pace
-        text: "repo"
+  page-footer: |
+    <img src="https://raw.githubusercontent.com/nmfs-opensci/assets/main/logo/nmfs-opensci-logo3.png" 
+         alt="NMFS OpenSci" style="width:200px"><br />
+    Fish-PACE HackWeek (2025)
 
-    style: "docked"
-    search: true
-    collapse-level: 1
-    toc-expand: false
-    contents:
-      - text: "Home"
-        href: index.html
-      - section: "Overview"
-        contents:
-          - text: "Ocean color"
-            href: content/1_introduction.md
-          - text: "Hyperspectral"
-            href: content/1_hyperspectral.md
-          - text: "Which satellites?"
-            href: content/1_which_satellites.md
-      - section: "Hyperspectral products"
-        href: content/2__products.md
-        contents:
-          - text: "Chlorophyll-a"
-            href: content/2_chla.html
-          - text: "Phytoplankton carbon"
-            href: content/2_phytoplankton_carbon.html
-          - text: "Diffuse attenuation coefficients"
-            href: content/2_kd.md
-          - text: "Phyto absorption coefficients"
-            href: content/2_aph.md
-          - text: "Non-phyto absorption coefficients"
-            href: content/2_adg.md
-          - text: "Spectral particle backscattering coefficients"
-            href: content/2_bbp.md
-          - text: "Photosynthetically available radiation"
-            href: content/2_par.md
-          - text: "Remote sensing reflectance"
-            href: content/2_rrs.html
-          - text: "Apparent Visible Wavelength"
-            href: content/2_avw.html
+  chapters:
+    - index.qmd
+    - part: "Overview"
+      chapters:
+        - content/1_introduction.md
+        - content/1_hyperspectral.md
+        - content/1_which_satellites.md
+    - part: "Hyperspectral products"
+      chapters:
+        - content/2__products.md
+        - content/2_chla.qmd
+        - content/2_phytoplankton_carbon.qmd
+        - content/2_kd.md
+        - content/2_aph.md
+        - content/2_adg.md
+        - content/2_bbp.md
+        - content/2_par.md
+        - content/2_rrs.qmd
+        - href: content/2_avw.qmd
+          text: "Apparent Visible Wavelength"
 
 format:
   html:
@@ -78,6 +54,10 @@ format:
     toc: true
     toc-depth: 2
     include-before-body: translate.html
+    number-sections: true
+    fig-numbering: true
+    fig-caption-location: bottom
+    number-depth: 1
 
 filters:
   - include-files.lua
