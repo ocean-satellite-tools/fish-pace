@@ -49,9 +49,9 @@ website:
         href: content/2__products.md
         contents:
           - text: "Chlorophyll-a"
-            href: content/2_chla.md
+            href: content/2_chla.html
           - text: "Phytoplankton carbon"
-            href: content/2_phytoplankton_carbon.md
+            href: content/2_phytoplankton_carbon.html
           - text: "Diffuse attenuation coefficients"
             href: content/2_kd.md
           - text: "Phyto absorption coefficients"

@@ -1,6 +1,5 @@
 ---
 title: Chlorophyll-a
-author: Ryan Vandermeulen
 ---
 
 ## What is it?
@@ -34,3 +33,84 @@ Another chlorophyll-a product may soon be offered operationally from PACE that w
 hyperspectral reflectance data and a mixed density network approach.
 
 ![](images/chloro-a.png)
+
+## Python
+
+::: {.callout-note collapse=true}
+### Code to access data
+
+```python
+%%time
+# 1 minute or so
+# Authenticate to NASA
+%%time
+# Authenticate to NASA
+import earthaccess
+auth = earthaccess.login(strategy="interactive", persist=True)
+    
+# (xmin=-73.5, ymin=33.5, xmax=-43.5, ymax=43.5)
+bbox = (-75.5, 38.0, -69.0, 42.5)
+import earthaccess
+results = earthaccess.search_data(
+    short_name = "PACE_OCI_L2_BGC",
+    temporal = ("2024-05-13", "2024-05-13"),
+    bounding_box = bbox
+)
+fileset = earthaccess.open(results);
+
+# load data
+import xarray as xr
+ds = xr.open_dataset(fileset[0], group="geophysical_data")
+
+# Add coords
+# Add coords
+nav = xr.open_dataset(fileset[0], group="navigation_data")
+nav = nav.set_coords(("longitude", "latitude"))
+dataset = xr.merge((ds["chlor_a"], nav.coords))
+
+# Subset
+chla_box = dataset.where(
+    (
+        (dataset["latitude"] > 38.0)
+        & (dataset["latitude"] < 42.5)
+        & (dataset["longitude"] > -75.5)
+        & (dataset["longitude"] < -69.0)
+    ),
+    drop = True
+)
+```
+:::
+
+
+::: {.callout-note collapse=true}
+### Make one plot
+
+```python
+import matplotlib.pyplot as plt
+from matplotlib.colors import LogNorm
+
+chl = chla_box["chlor_a"].where(chla_box["chlor_a"] > 0)
+
+plot = plt.pcolormesh(
+    chla_box["longitude"], chla_box["latitude"], chl,
+    cmap="jet", norm=LogNorm(vmin=1e-2, vmax=1e1), shading="auto"
+)
+cbar = plt.colorbar(plot)
+cbar.set_label("Chlorophyll-a (mg m⁻³)", fontsize=16, fontweight="bold")
+
+plt.xlim(-75.5, -69.0)
+plt.ylim(38.0, 42.5)
+plt.xlabel("Longitude")
+plt.ylabel("Latitude")
+plt.title("Chlorophyll-a (Log Scale)")
+
+plt.show()
+```
+:::
+
+
+## R
+
+
+
+## Matlab
