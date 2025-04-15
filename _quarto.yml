@@ -11,8 +11,7 @@ date: now
 date-format: "YYYY-MM-DDTHH:mm"
 
 book:
-  title: "Hyperspectral products for fisheries"
-  subtitle: "Hyperspectral products for fisheries and aquaculture"
+  title: "Applications of PACE hyperspectral ocean color data for aquaculture and fisheries management"
   favicon: images/favicon.png
   site-url: https://ocean-satellite-tools.github.io/fish-pace
   repo-url: https://github.com/ocean-satellite-tools/fish-pace
@@ -21,9 +20,13 @@ book:
     <img src="https://raw.githubusercontent.com/nmfs-opensci/assets/main/logo/nmfs-opensci-logo3.png" 
          alt="NMFS OpenSci" style="width:200px"><br />
     Fish-PACE HackWeek (2025)
+    
+  sidebar:
+    title: "Hyperspectral products for fisheries"
 
   chapters:
-    - index.qmd
+    - href: index.qmd
+      text: Home
     - part: "Overview"
       chapters:
         - content/1_introduction.md

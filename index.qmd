@@ -4,6 +4,8 @@ for aquaculture and fisheries management"
 author: Ryan Vandermeulen, Veronica Lance, Clete Otoshi, Ken Riley, Michelle Tomlinson, and Rebecca Trinh; Python/R code by Elizabeth Holmes
 date: April 2025
 version: 2025-04-11
+title-block: true
+page-title: false
 ---
 
 This is a condensed version of [NOAA Tech. Memo. NMFS-F/SPO-253](#sec-tech-memo).
