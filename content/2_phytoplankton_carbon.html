@@ -6,9 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Ryan Vandermeulen">
 
-<title>Phytoplankton carbon – Hyperspectral products for fisheries</title>
+<title>7&nbsp; Phytoplankton carbon – Hyperspectral products for fisheries</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -21,10 +20,45 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
 <script src="../site_libs/clipboard/clipboard.min.js"></script>
 <script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
@@ -42,8 +76,8 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-4379b0ccadffce622b03caf4c46266b3.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-360dfb76d7d7ff9ffda507c77b5c9c5b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark-8ad05a24cc9d91cc423ab8f74f845ddc.min.css" rel="prefetch" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-8bc9083a67a9406e8c117275a602be3a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-dfa4b414af44d82e926511d2f98413e7.min.css" rel="prefetch" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -76,7 +110,7 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="../styles.css">
 </head>
 
-<body class="nav-sidebar docked">
+<body class="nav-sidebar floating">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -85,7 +119,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../content/2__products.html">Hyperspectral products</a></li><li class="breadcrumb-item"><a href="../content/2_phytoplankton_carbon.html">Phytoplankton carbon</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../content/2__products.html">Hyperspectral products</a></li><li class="breadcrumb-item"><a href="../content/2_phytoplankton_carbon.html"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Phytoplankton carbon</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -97,13 +131,12 @@ ul.task-list li input[type="checkbox"] {
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
-    <div class="pt-lg-2 mt-2 text-center sidebar-header">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
-      <a href="../">Hyperspectral products for fisheries and aquaculture</a> 
-        <div class="sidebar-tools-main tools-wide">
-    <a href="https://github.com/ocean-satellite-tools" title="GH org" class="quarto-navigation-tool px-1" aria-label="GH org"><i class="bi bi-globe"></i></a>
-    <a href="https://github.com/ocean-satellite-tools/fish-pace" title="repo" class="quarto-navigation-tool px-1" aria-label="repo"><i class="bi bi-github"></i></a>
+      <a href="../">Hyperspectral products for fisheries</a> 
+        <div class="sidebar-tools-main">
+    <a href="https://github.com/ocean-satellite-tools/fish-pace" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
   <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
     </div>
@@ -118,41 +151,41 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Home</span></a>
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Applications of PACE hyperspectral ocean color data for aquaculture and fisheries management</span></span></a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
  <span class="menu-text">Overview</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../content/1_introduction.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Ocean color</span></a>
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Introduction</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../content/1_hyperspectral.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Hyperspectral</span></a>
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Hyperspectral ocean color</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../content/1_which_satellites.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Which satellites?</span></a>
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Ocean color satellites</span></span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../content/2__products.html" class="sidebar-item-text sidebar-link">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
  <span class="menu-text">Hyperspectral products</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
@@ -161,56 +194,62 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../content/2__products.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Hyperspectral products</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../content/2_chla.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Chlorophyll-a</span></a>
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Chlorophyll-a</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../content/2_phytoplankton_carbon.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Phytoplankton carbon</span></a>
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Phytoplankton carbon</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../content/2_kd.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Diffuse attenuation coefficients</span></a>
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Diffuse attenuation coefficients (Kd)</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../content/2_aph.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Phyto absorption coefficients</span></a>
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Spectral phytoplankton absorption coefficients (aph)</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../content/2_adg.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Non-phyto absorption coefficients</span></a>
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Spectral non-algal particle plus dissolved organic matter absorption coefficients (adg)</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../content/2_bbp.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Spectral particle backscattering coefficients</span></a>
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Spectral particle backscattering coefficients (bbp)</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../content/2_par.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Photosynthetically available radiation</span></a>
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Photosynthetically available radiation (PAR)</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../content/2_rrs.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Remote sensing reflectance</span></a>
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Remote sensing reflectance (Rrs)</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../content/2_avw.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Apparent Visible Wavelength</span></a>
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Apparent Visible Wavelength</span></span></a>
   </div>
 </li>
       </ul>
@@ -222,15 +261,16 @@ ul.task-list li input[type="checkbox"] {
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
+    <h2 id="toc-title">Table of contents</h2>
    
   <ul class="collapse">
   <li><a href="#what-is-it" id="toc-what-is-it" class="nav-link active" data-scroll-target="#what-is-it">What is it?</a></li>
   <li><a href="#how-does-it-impact-aquaculturefisheries" id="toc-how-does-it-impact-aquaculturefisheries" class="nav-link" data-scroll-target="#how-does-it-impact-aquaculturefisheries">How does it impact Aquaculture/Fisheries?</a></li>
   <li><a href="#what-are-the-limitationscaveats" id="toc-what-are-the-limitationscaveats" class="nav-link" data-scroll-target="#what-are-the-limitationscaveats">What are the limitations/caveats?</a></li>
   <li><a href="#does-hyperspectral-directly-improveenable-this-product" id="toc-does-hyperspectral-directly-improveenable-this-product" class="nav-link" data-scroll-target="#does-hyperspectral-directly-improveenable-this-product">Does HYPERSPECTRAL directly improve/enable this product?</a></li>
+  <li><a href="#python" id="toc-python" class="nav-link" data-scroll-target="#python">Python</a></li>
   </ul>
-<div class="toc-actions"><ul class="collapse"><li><a href="https://github.com/ocean-satellite-tools/fish-pace/edit/main/content/2_phytoplankton_carbon.md" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ocean-satellite-tools/fish-pace/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/ocean-satellite-tools/fish-pace/blob/main/content/2_phytoplankton_carbon.md" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></nav>
+<div class="toc-actions"><ul class="collapse"><li><a href="https://github.com/ocean-satellite-tools/fish-pace/edit/main/content/2_phytoplankton_carbon.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ocean-satellite-tools/fish-pace/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/ocean-satellite-tools/fish-pace/blob/main/content/2_phytoplankton_carbon.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -244,26 +284,20 @@ function googleTranslateElementInit() {
 
 <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../content/2__products.html">Hyperspectral products</a></li><li class="breadcrumb-item"><a href="../content/2_phytoplankton_carbon.html">Phytoplankton carbon</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../content/2__products.html">Hyperspectral products</a></li><li class="breadcrumb-item"><a href="../content/2_phytoplankton_carbon.html"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Phytoplankton carbon</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Phytoplankton carbon</h1>
+<h1 class="title"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Phytoplankton carbon</span></h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>Ryan Vandermeulen </p>
-          </div>
-  </div>
     
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">2025-04-10T13:37</p>
+      <p class="date">2025-04-15T02:47</p>
     </div>
   </div>
   
@@ -277,20 +311,119 @@ function googleTranslateElementInit() {
 
 <section id="what-is-it" class="level2">
 <h2 class="anchored" data-anchor-id="what-is-it">What is it?</h2>
-<p>The phytoplankton carbon product expresses the concentration of phytoplankton in terms of carbon concentration, instead of chlorophyll-a. Contrasting from the chlorophyll-a product, phytoplankton carbon is derived from an empirical relationship to the particle backscattering properties (see Product 6) of the water.</p>
+<p>The phytoplankton carbon product (<a href="#fig-cp" class="quarto-xref">Figure&nbsp;<span>7.1</span></a>) expresses the concentration of phytoplankton in terms of carbon concentration, instead of chlorophyll-a. Contrasting from the chlorophyll- a product, phytoplankton carbon is derived from an empirical relationship to the particle backscattering properties (see Product 7) of the water.</p>
 </section>
 <section id="how-does-it-impact-aquaculturefisheries" class="level2">
 <h2 class="anchored" data-anchor-id="how-does-it-impact-aquaculturefisheries">How does it impact Aquaculture/Fisheries?</h2>
-<p>Some fisheries applications may prefer to work in units of carbon biomass instead of pigment- based (i.e.&nbsp;chlorophyll-a) biomass. A constant chlorophyll-a value can represent a wide array of cell concentrations, due to environmental conditions and individual cell physiology/stress. For example, individual phytoplankton can produce more chlorophyll-a/cell in low-light conditions without changing the actual number of cells. The carbon product is not subject to these variations, and is a more direct indicator of phytoplankton biomass. Modelers may also be interested in computing the carbon to chlorophyll ratio, which can be obtained as carbon_phyto/chlor_a.</p>
+<p>Some fisheries applications may prefer to work in units of carbon biomass instead of pigment-based (i.e., chlorophyll-a) biomass. A constant chlorophyll-a value can represent a wide array of cell concentrations, due to environmental conditions and individual cell physiology/stress. For example, individual phytoplankton can produce more chlorophyll- a/cell in low-light conditions without changing the actual number of cells. The carbon product is not subject to these variations, and is a more direct indicator of phytoplankton biomass. Modelers may also be interested in computing a carbon to chlorophyll ratio to tease out environmental or species variations, and this is obtained as carbon_phyto ÷ chlor_a.</p>
 </section>
 <section id="what-are-the-limitationscaveats" class="level2">
 <h2 class="anchored" data-anchor-id="what-are-the-limitationscaveats">What are the limitations/caveats?</h2>
-<p>This product was empirically tuned with field data, but it is not currently representative of optically complex waters. The performance in coastal regions remains untested. This product relies on the “inherent optical property (IOP)” suite of ocean color products, and thus can sometimes fail to arrive at a solution (i.e.&nbsp;no data) in waters with extreme scattering or chromophoric dissolved organic matter (CDOM) concentrations.</p>
+<p>This product was empirically tuned with field data, but it is not currently representative of optically complex waters. The performance in coastal regions remains untested. This product relies on the “inherent optical property (IOP)” suite of ocean color products, and thus can sometimes fail to arrive at a solution (i.e., no data) in waters with extreme scattering or chromophoric dissolved organic matter (CDOM) concentrations.</p>
 </section>
 <section id="does-hyperspectral-directly-improveenable-this-product" class="level2">
 <h2 class="anchored" data-anchor-id="does-hyperspectral-directly-improveenable-this-product">Does HYPERSPECTRAL directly improve/enable this product?</h2>
-<p>Indirectly through improvements to the IOP products. PACE is the first mission to offer phytoplankton carbon as a product under “provisional” status.</p>
-<p><img src="images/carbon-phyto.png" class="img-fluid"></p>
+<p>Operational improvements to IOP backscatter products using hyperspectral data are anticipated, but still in development (at the time of this publication).</p>
+<div id="fig-cp" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-cp-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/carbon-phyto.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-cp-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;7.1: Projection of PACE-derived carbon_phyto in the North Atlantic Ocean; May 13, 2024.
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="python" class="level2">
+<h2 class="anchored" data-anchor-id="python">Python</h2>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Code to access data
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="op">%%</span>time</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co"># 1 minute or so</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Authenticate to NASA</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="op">%%</span>time</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Authenticate to NASA</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> earthaccess</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>auth <span class="op">=</span> earthaccess.login(strategy<span class="op">=</span><span class="st">"interactive"</span>, persist<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="co"># (xmin=-73.5, ymin=33.5, xmax=-43.5, ymax=43.5)</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>bbox <span class="op">=</span> (<span class="op">-</span><span class="fl">75.5</span>, <span class="fl">38.0</span>, <span class="op">-</span><span class="fl">69.0</span>, <span class="fl">42.5</span>)</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> earthaccess</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>results <span class="op">=</span> earthaccess.search_data(</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>    short_name <span class="op">=</span> <span class="st">"PACE_OCI_L2_BGC"</span>,</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>    temporal <span class="op">=</span> (<span class="st">"2024-05-13"</span>, <span class="st">"2024-05-13"</span>),</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>    bounding_box <span class="op">=</span> bbox</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>fileset <span class="op">=</span> earthaccess.<span class="bu">open</span>(results)<span class="op">;</span></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="co"># load data</span></span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> xarray <span class="im">as</span> xr</span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>ds <span class="op">=</span> xr.open_dataset(fileset[<span class="dv">0</span>], group<span class="op">=</span><span class="st">"geophysical_data"</span>)</span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a><span class="co"># Add coords</span></span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a><span class="co"># Add coords</span></span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>nav <span class="op">=</span> xr.open_dataset(fileset[<span class="dv">0</span>], group<span class="op">=</span><span class="st">"navigation_data"</span>)</span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>nav <span class="op">=</span> nav.set_coords((<span class="st">"longitude"</span>, <span class="st">"latitude"</span>))</span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>dataset <span class="op">=</span> xr.merge((ds[<span class="st">"carbon_phyto"</span>], nav.coords))</span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a><span class="co"># Subset</span></span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>carbon_phyto_box <span class="op">=</span> dataset.where(</span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>    (</span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a>        (dataset[<span class="st">"latitude"</span>] <span class="op">&gt;</span> <span class="fl">38.0</span>)</span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a>        <span class="op">&amp;</span> (dataset[<span class="st">"latitude"</span>] <span class="op">&lt;</span> <span class="fl">42.5</span>)</span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a>        <span class="op">&amp;</span> (dataset[<span class="st">"longitude"</span>] <span class="op">&gt;</span> <span class="op">-</span><span class="fl">75.5</span>)</span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a>        <span class="op">&amp;</span> (dataset[<span class="st">"longitude"</span>] <span class="op">&lt;</span> <span class="op">-</span><span class="fl">69.0</span>)</span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a>    ),</span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a>    drop <span class="op">=</span> <span class="va">True</span></span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Make one plot
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<div class="sourceCode" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> matplotlib.colors <span class="im">import</span> LogNorm</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>cp <span class="op">=</span> carbon_phyto_box[<span class="st">"carbon_phyto"</span>].where(carbon_phyto_box[<span class="st">"carbon_phyto"</span>] <span class="op">&gt;</span> <span class="dv">0</span>)</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>plot <span class="op">=</span> plt.pcolormesh(</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>    carbon_phyto_box[<span class="st">"longitude"</span>], carbon_phyto_box[<span class="st">"latitude"</span>], cp,</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>    cmap<span class="op">=</span><span class="st">"jet"</span>, norm<span class="op">=</span>LogNorm(vmin<span class="op">=</span><span class="fl">1e1</span>, vmax<span class="op">=</span><span class="dv">500</span>), shading<span class="op">=</span><span class="st">"auto"</span></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>cbar <span class="op">=</span> plt.colorbar(plot)</span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>cbar.set_label(<span class="st">"Phytoplankton Carbon (mg m⁻³)"</span>, fontsize<span class="op">=</span><span class="dv">16</span>, fontweight<span class="op">=</span><span class="st">"bold"</span>)</span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>plt.xlim(<span class="op">-</span><span class="fl">75.5</span>, <span class="op">-</span><span class="fl">69.0</span>)</span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>plt.ylim(<span class="fl">38.0</span>, <span class="fl">42.5</span>)</span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">"Longitude"</span>)</span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">"Latitude"</span>)</span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">"Phytoplankton Carbon (Log Scale)"</span>)</span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+</div>
 
 
 </section>
@@ -860,12 +993,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
       <a href="../content/2_chla.html" class="pagination-link" aria-label="Chlorophyll-a">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Chlorophyll-a</span>
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Chlorophyll-a</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../content/2_kd.html" class="pagination-link" aria-label="Diffuse attenuation coefficients">
-        <span class="nav-page-text">Diffuse attenuation coefficients</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../content/2_kd.html" class="pagination-link" aria-label="Diffuse attenuation coefficients (Kd)">
+        <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Diffuse attenuation coefficients (Kd)</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -876,8 +1009,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       &nbsp;
     </div>   
     <div class="nav-footer-center">
-<p><img src="https://raw.githubusercontent.com/nmfs-opensci/assets/main/logo/nmfs-opensci-logo3.png" alt="NMFS OpenSci" style="width:200px"><br>Fish-PACE HackWeek (2025)</p>
-<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/ocean-satellite-tools/fish-pace/edit/main/content/2_phytoplankton_carbon.md" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ocean-satellite-tools/fish-pace/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/ocean-satellite-tools/fish-pace/blob/main/content/2_phytoplankton_carbon.md" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></div>
+<p><img src="https://raw.githubusercontent.com/nmfs-opensci/assets/main/logo/nmfs-opensci-logo3.png" alt="NMFS OpenSci" style="width:200px"><br> Fish-PACE HackWeek (2025)</p>
+<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/ocean-satellite-tools/fish-pace/edit/main/content/2_phytoplankton_carbon.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ocean-satellite-tools/fish-pace/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/ocean-satellite-tools/fish-pace/blob/main/content/2_phytoplankton_carbon.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></div>
     <div class="nav-footer-right">
       &nbsp;
     </div>

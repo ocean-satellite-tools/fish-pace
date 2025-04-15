@@ -15,3 +15,14 @@
   margin-top: 0.3rem;
   margin-bottom: 0.3rem;
 }
+
+/* Make book sidebar match website-style background */
+.sidebar {
+  background-color: #f8f9fa !important; /* same as Bootstrap 'light' */
+  border-right: 1px solid #ddd;
+}
+
+/* Hide section numbers in sidebar nav */
+.sidebar .chapter-number {
+  display: none;
+}
